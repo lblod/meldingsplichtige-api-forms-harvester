@@ -3,7 +3,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix mu: <http://mu.semte.ch/vocabularies/core/> .
 @prefix ext: <http://mu.semte.ch/vocabularies/ext/> .
-#@prefix : <http://data.lblod.info/forms/> .
+@prefix : <http://data.lblod.info/forms/> .
 @prefix fieldGroups: <http://data.lblod.info/field-groups/> .
 @prefix fields: <http://data.lblod.info/fields/> .
 @prefix displayTypes: <http://lblod.data.gift/display-types/> .
@@ -155,7 +155,7 @@ fields:ef31b839-c461-4732-b35c-a8b6c7507cf1 a form:Field ;
       ] ;
     form:displayType displayTypes:dynamicSelect.
 
-<http://data.lblod.info/fields/a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d:required> a form:Field ;
+fields:a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d a form:Field ;
     mu:uuid "a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d" ;
     sh:name "MAR-code" ;
     sh:order 3101 ;
@@ -185,7 +185,7 @@ fields:7793c27f-a41b-4665-a876-da9d94075a70 a form:Field ;
         sh:resultMessage "Geef een geldige datum op."] ;
     form:displayType displayTypes:Input.
 
-<http://data.lblod.info/fields/4b32c8fb-9725-4f9f-9872-b04198732483:required> a form:Field ;
+fields:4b32c8fb-9725-4f9f-9872-b04198732483 a form:Field ;
     mu:uuid "4b32c8fb-9725-4f9f-9872-b04198732483" ;
     sh:name "Geldt vanaf" ;
     sh:order 3201 ;
@@ -214,7 +214,7 @@ fields:eeacea67-d327-4952-bbfa-31207823ba87 a form:Field ;
         sh:resultMessage "Geef een geldige datum op."@nl ] ;
     form:displayType displayTypes:Input.
 
-<http://data.lblod.info/fields/3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44:required> a form:Field ;
+fields:3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44 a form:Field ;
     mu:uuid "3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44" ;
     sh:name "Geldt tot" ;
     sh:order 3301 ;
@@ -232,7 +232,7 @@ fields:eeacea67-d327-4952-bbfa-31207823ba87 a form:Field ;
     form:displayType displayTypes:Input.
 
 # TODO: complex skos scheme
-<http://data.lblod.info/fields/7cd14dfd-81ff-4a5d-8374-5879c5877c4c:required> a form:Field ;
+fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c a form:Field ;
     mu:uuid "7cd14dfd-81ff-4a5d-8374-5879c5877c4c" ;
     sh:name "Soort Belasting" ;
     sh:order 3400 ;

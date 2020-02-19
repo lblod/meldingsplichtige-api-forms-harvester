@@ -1,0 +1,6 @@
+:besluitenlijst a form:Form ;
+    mu:uuid "a0a120d2-87a8-4f45-a61b-61654997cf1e" ;
+    form:hasFieldGroup fieldGroups:allForms .
+fieldGroups:allForms a form:FieldGroup;
+    mu:uuid "3a60def6-107e-4716-bc5f-2f2e108f7fab" ;
+    form:hasField fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a.
