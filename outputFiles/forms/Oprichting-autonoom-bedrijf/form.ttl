@@ -1,11 +1,15 @@
-fieldGroups:7a24a58b-9100-4191-8bf0-70a0be1c34e5 a form:FieldGroup ;
-    mu:uuid "7a24a58b-9100-4191-8bf0-70a0be1c34e5" ; 
+
+
+###########Oprichting-autonoom-bedrijf###########
+
+fieldGroups:79a758cc-0ee9-492d-a070-255adaf183bc a form:FieldGroup ;
+    mu:uuid "79a758cc-0ee9-492d-a070-255adaf183bc" ; 
     form:hasField fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:173b1d59-2f43-4a86-afe1-38fb3d7e95bb.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:60fb8c77-fb61-4695-8192-2c03d604965c.
 
-fields:173b1d59-2f43-4a86-afe1-38fb3d7e95bb a form:ConditionalFieldGroup ;
-    mu:uuid "173b1d59-2f43-4a86-afe1-38fb3d7e95bb";
+fields:60fb8c77-fb61-4695-8192-2c03d604965c a form:ConditionalFieldGroup ;
+    mu:uuid "60fb8c77-fb61-4695-8192-2c03d604965c";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:173b1d59-2f43-4a86-afe1-38fb3d7e95bb a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/bd0b0c42-ba5e-4acc-b644-95f6aad904c7>
       ] ;
-    form:hasFieldGroup fieldGroups:7a24a58b-9100-4191-8bf0-70a0be1c34e5 .
+    form:hasFieldGroup fieldGroups:79a758cc-0ee9-492d-a070-255adaf183bc .
+    

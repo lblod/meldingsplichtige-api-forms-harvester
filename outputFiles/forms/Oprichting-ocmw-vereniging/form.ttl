@@ -1,11 +1,15 @@
-fieldGroups:3847077f-07ba-4b96-bc3b-d8953017c26f a form:FieldGroup ;
-    mu:uuid "3847077f-07ba-4b96-bc3b-d8953017c26f" ; 
+
+
+###########Oprichting-ocmw-vereniging###########
+
+fieldGroups:81ab5b81-adb0-4cb0-9008-09079f0925c7 a form:FieldGroup ;
+    mu:uuid "81ab5b81-adb0-4cb0-9008-09079f0925c7" ; 
     form:hasField fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:b3c4dd70-b4f0-4aa4-b022-ff8ca97c5256.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:af0bcfbe-d329-44dc-ab4c-c63a689b05e8.
 
-fields:b3c4dd70-b4f0-4aa4-b022-ff8ca97c5256 a form:ConditionalFieldGroup ;
-    mu:uuid "b3c4dd70-b4f0-4aa4-b022-ff8ca97c5256";
+fields:af0bcfbe-d329-44dc-ab4c-c63a689b05e8 a form:ConditionalFieldGroup ;
+    mu:uuid "af0bcfbe-d329-44dc-ab4c-c63a689b05e8";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:b3c4dd70-b4f0-4aa4-b022-ff8ca97c5256 a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/b69c9f18-967c-4feb-90a8-8eea3c8ce46b>
       ] ;
-    form:hasFieldGroup fieldGroups:3847077f-07ba-4b96-bc3b-d8953017c26f .
+    form:hasFieldGroup fieldGroups:81ab5b81-adb0-4cb0-9008-09079f0925c7 .
+    

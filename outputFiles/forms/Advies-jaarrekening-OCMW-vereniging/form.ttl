@@ -1,11 +1,15 @@
-fieldGroups:e3f0421e-fe53-40f2-96c5-751dfc16835d a form:FieldGroup ;
-    mu:uuid "e3f0421e-fe53-40f2-96c5-751dfc16835d" ; 
+
+
+###########Advies-jaarrekening-OCMW-vereniging###########
+
+fieldGroups:31f7d094-8356-4ac0-acae-69ea5272d5bd a form:FieldGroup ;
+    mu:uuid "31f7d094-8356-4ac0-acae-69ea5272d5bd" ; 
     form:hasField fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:38a74eff-10fd-4cae-8744-d4c87096aad5.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:c0981f91-91b0-4229-ae6f-ad4604d7f5db.
 
-fields:38a74eff-10fd-4cae-8744-d4c87096aad5 a form:ConditionalFieldGroup ;
-    mu:uuid "38a74eff-10fd-4cae-8744-d4c87096aad5";
+fields:c0981f91-91b0-4229-ae6f-ad4604d7f5db a form:ConditionalFieldGroup ;
+    mu:uuid "c0981f91-91b0-4229-ae6f-ad4604d7f5db";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:38a74eff-10fd-4cae-8744-d4c87096aad5 a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/4350cdda-8291-4055-9026-5c7429357fce>
       ] ;
-    form:hasFieldGroup fieldGroups:e3f0421e-fe53-40f2-96c5-751dfc16835d .
+    form:hasFieldGroup fieldGroups:31f7d094-8356-4ac0-acae-69ea5272d5bd .
+    

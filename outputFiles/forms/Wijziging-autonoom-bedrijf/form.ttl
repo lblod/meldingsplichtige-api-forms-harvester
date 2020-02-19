@@ -1,11 +1,15 @@
-fieldGroups:76ae5247-3fe4-43d9-9f12-b4db80bedf51 a form:FieldGroup ;
-    mu:uuid "76ae5247-3fe4-43d9-9f12-b4db80bedf51" ; 
+
+
+###########Wijziging-autonoom-bedrijf###########
+
+fieldGroups:82b81753-2002-4e40-8f7d-8e28432df727 a form:FieldGroup ;
+    mu:uuid "82b81753-2002-4e40-8f7d-8e28432df727" ; 
     form:hasField fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d4b4960b-0891-42ad-8e32-ec9195c094e3.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:660bcff8-0365-48d3-bfd6-d086f6600b7a.
 
-fields:d4b4960b-0891-42ad-8e32-ec9195c094e3 a form:ConditionalFieldGroup ;
-    mu:uuid "d4b4960b-0891-42ad-8e32-ec9195c094e3";
+fields:660bcff8-0365-48d3-bfd6-d086f6600b7a a form:ConditionalFieldGroup ;
+    mu:uuid "660bcff8-0365-48d3-bfd6-d086f6600b7a";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:d4b4960b-0891-42ad-8e32-ec9195c094e3 a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/c945b531-4742-43fe-af55-b13da6ecc6fe>
       ] ;
-    form:hasFieldGroup fieldGroups:76ae5247-3fe4-43d9-9f12-b4db80bedf51 .
+    form:hasFieldGroup fieldGroups:82b81753-2002-4e40-8f7d-8e28432df727 .
+    

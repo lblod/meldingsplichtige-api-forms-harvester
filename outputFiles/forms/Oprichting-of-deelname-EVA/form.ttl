@@ -1,11 +1,15 @@
-fieldGroups:07b28f80-7fb8-47e7-925e-37acf85677d1 a form:FieldGroup ;
-    mu:uuid "07b28f80-7fb8-47e7-925e-37acf85677d1" ; 
+
+
+###########Oprichting-of-deelname-EVA###########
+
+fieldGroups:0801581d-5705-472f-86d5-7a3dd405e111 a form:FieldGroup ;
+    mu:uuid "0801581d-5705-472f-86d5-7a3dd405e111" ; 
     form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d3774def-38e9-4d0c-b4c6-3358c24eb969.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:50b65a53-0965-4705-b2e1-3721ea7a2ee5.
 
-fields:d3774def-38e9-4d0c-b4c6-3358c24eb969 a form:ConditionalFieldGroup ;
-    mu:uuid "d3774def-38e9-4d0c-b4c6-3358c24eb969";
+fields:50b65a53-0965-4705-b2e1-3721ea7a2ee5 a form:ConditionalFieldGroup ;
+    mu:uuid "50b65a53-0965-4705-b2e1-3721ea7a2ee5";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:d3774def-38e9-4d0c-b4c6-3358c24eb969 a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/f8c070bd-96e4-43a1-8c6e-532bcd771251>
       ] ;
-    form:hasFieldGroup fieldGroups:07b28f80-7fb8-47e7-925e-37acf85677d1 .
+    form:hasFieldGroup fieldGroups:0801581d-5705-472f-86d5-7a3dd405e111 .
+    

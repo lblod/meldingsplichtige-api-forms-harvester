@@ -1,11 +1,15 @@
-fieldGroups:21c6273a-bd95-402d-ac22-446fe71c8e99 a form:FieldGroup ;
-    mu:uuid "21c6273a-bd95-402d-ac22-446fe71c8e99" ; 
+
+
+###########Toetreding-rechtspersoon###########
+
+fieldGroups:79f8e7a2-0ecf-4872-a2ed-e640d71e3c9c a form:FieldGroup ;
+    mu:uuid "79f8e7a2-0ecf-4872-a2ed-e640d71e3c9c" ; 
     form:hasField fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:bda42f4c-b6b4-4e04-9e34-afaa1dd2a457.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:81fe1b73-4165-4c93-a35b-b92374f858ba.
 
-fields:bda42f4c-b6b4-4e04-9e34-afaa1dd2a457 a form:ConditionalFieldGroup ;
-    mu:uuid "bda42f4c-b6b4-4e04-9e34-afaa1dd2a457";
+fields:81fe1b73-4165-4c93-a35b-b92374f858ba a form:ConditionalFieldGroup ;
+    mu:uuid "81fe1b73-4165-4c93-a35b-b92374f858ba";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:bda42f4c-b6b4-4e04-9e34-afaa1dd2a457 a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/e27ef237-29de-49b8-be22-4ee2ab2d4e5b>
       ] ;
-    form:hasFieldGroup fieldGroups:21c6273a-bd95-402d-ac22-446fe71c8e99 .
+    form:hasFieldGroup fieldGroups:79f8e7a2-0ecf-4872-a2ed-e640d71e3c9c .
+    

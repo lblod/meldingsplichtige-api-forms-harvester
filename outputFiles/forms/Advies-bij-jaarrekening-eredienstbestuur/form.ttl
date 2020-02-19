@@ -1,11 +1,15 @@
-fieldGroups:6dab9733-a21a-476b-8b94-70c59d8c9296 a form:FieldGroup ;
-    mu:uuid "6dab9733-a21a-476b-8b94-70c59d8c9296" ; 
+
+
+###########Advies-bij-jaarrekening-eredienstbestuur###########
+
+fieldGroups:9c54047a-3662-425e-b522-7e9efbd641d8 a form:FieldGroup ;
+    mu:uuid "9c54047a-3662-425e-b522-7e9efbd641d8" ; 
     form:hasField fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:c8723b94-ecd2-40bc-a8d3-6330aac72a20.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d05518eb-ef35-475a-b917-df2facbec5af.
 
-fields:c8723b94-ecd2-40bc-a8d3-6330aac72a20 a form:ConditionalFieldGroup ;
-    mu:uuid "c8723b94-ecd2-40bc-a8d3-6330aac72a20";
+fields:d05518eb-ef35-475a-b917-df2facbec5af a form:ConditionalFieldGroup ;
+    mu:uuid "d05518eb-ef35-475a-b917-df2facbec5af";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:c8723b94-ecd2-40bc-a8d3-6330aac72a20 a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/79414af4-4f57-4ca3-aaa4-f8f1e015e71c>
       ] ;
-    form:hasFieldGroup fieldGroups:6dab9733-a21a-476b-8b94-70c59d8c9296 .
+    form:hasFieldGroup fieldGroups:9c54047a-3662-425e-b522-7e9efbd641d8 .
+    

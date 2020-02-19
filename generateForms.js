@@ -107,14 +107,16 @@ forms.forEach((form, i)=>{
     }
   });
 
-  let data=`\
+  let data=`
+
+###########`+form.serialName+`###########
+
 fieldGroups:`+form.formId+` a form:FieldGroup ;
     mu:uuid "`+form.formId+`" ; 
     form:hasField `+fields;
 
   const tempuuid=uuid();
-  const additionalTriples=`\
-
+  const additionalTriples=`
 
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:`+tempuuid+`.
 
@@ -127,7 +129,9 @@ fields:`+tempuuid+` a form:ConditionalFieldGroup ;
         form:conceptScheme <`+form.formConceptScheme+`> ;
         form:customValue <`+form.formConceptSchemeId+`>
       ] ;
-    form:hasFieldGroup fieldGroups:`+form.formId+` .`;
+    form:hasFieldGroup fieldGroups:`+form.formId+` .
+    
+`;
   
   data+=additionalTriples;
 

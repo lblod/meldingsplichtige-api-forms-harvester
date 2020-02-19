@@ -1,11 +1,15 @@
-fieldGroups:3db90868-a36b-4ece-8001-3de6cf9651be a form:FieldGroup ;
-    mu:uuid "3db90868-a36b-4ece-8001-3de6cf9651be" ; 
+
+
+###########Schorsing-beslissing-eredienstbesturen###########
+
+fieldGroups:783940d0-4466-43c7-bbcc-cdc9104bb33c a form:FieldGroup ;
+    mu:uuid "783940d0-4466-43c7-bbcc-cdc9104bb33c" ; 
     form:hasField fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:ca64f4d9-db0c-4701-b8df-c8d5c2151de8.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0a12683d-ed61-4379-9b20-755c6fd2b080.
 
-fields:ca64f4d9-db0c-4701-b8df-c8d5c2151de8 a form:ConditionalFieldGroup ;
-    mu:uuid "ca64f4d9-db0c-4701-b8df-c8d5c2151de8";
+fields:0a12683d-ed61-4379-9b20-755c6fd2b080 a form:ConditionalFieldGroup ;
+    mu:uuid "0a12683d-ed61-4379-9b20-755c6fd2b080";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -13,4 +17,5 @@ fields:ca64f4d9-db0c-4701-b8df-c8d5c2151de8 a form:ConditionalFieldGroup ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/b25faa84-3ab5-47ae-98c0-1b389c77b827>
       ] ;
-    form:hasFieldGroup fieldGroups:3db90868-a36b-4ece-8001-3de6cf9651be .
+    form:hasFieldGroup fieldGroups:783940d0-4466-43c7-bbcc-cdc9104bb33c .
+    
