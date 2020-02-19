@@ -1,9 +1,11 @@
-fieldGroups:7b2dc93c-89c1-4b65-97c4-e01bb3fa9a7b a form:FieldGroup ;
-    mu:uuid "7b2dc93c-89c1-4b65-97c4-e01bb3fa9a7b" ; 
-    form:hasField fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:4c05e1a6-0b2f-449c-af14-cb0b1c1e9efb;
+fieldGroups:db66b02b-44a9-42d7-b03d-a8b1039f108e a form:FieldGroup ;
+    mu:uuid "db66b02b-44a9-42d7-b03d-a8b1039f108e" ; 
+    form:hasField fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+  
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:7d21b322-ad15-4fd2-824b-c4939359d2bc;
 
-fields:4c05e1a6-0b2f-449c-af14-cb0b1c1e9efb a form:ConditionalFieldGroup ;
-    mu:uuid "4c05e1a6-0b2f-449c-af14-cb0b1c1e9efb";
+fields:7d21b322-ad15-4fd2-824b-c4939359d2bc a form:ConditionalFieldGroup ;
+    mu:uuid "7d21b322-ad15-4fd2-824b-c4939359d2bc";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -12,4 +14,4 @@ fields:4c05e1a6-0b2f-449c-af14-cb0b1c1e9efb a form:ConditionalFieldGroup ;
         #based on document-type
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/a0a709a7-ac07-4457-8d40-de4aea9b1432>.
       ] ;
-    form:hasFieldGroup fieldGroups:7b2dc93c-89c1-4b65-97c4-e01bb3fa9a7b .
+    form:hasFieldGroup fieldGroups:db66b02b-44a9-42d7-b03d-a8b1039f108e .

@@ -1,9 +1,11 @@
-fieldGroups:44dbce39-440a-4fbe-b5c7-c48ae3ec0748 a form:FieldGroup ;
-    mu:uuid "44dbce39-440a-4fbe-b5c7-c48ae3ec0748" ; 
-    form:hasField fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:f176d895-a866-4509-8284-02ffcd500c42;
+fieldGroups:7a05bfb3-0971-4b44-9ae3-14f98821519a a form:FieldGroup ;
+    mu:uuid "7a05bfb3-0971-4b44-9ae3-14f98821519a" ; 
+    form:hasField fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+  
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:c14cde64-da30-4174-a95c-5fe055aea5a2;
 
-fields:f176d895-a866-4509-8284-02ffcd500c42 a form:ConditionalFieldGroup ;
-    mu:uuid "f176d895-a866-4509-8284-02ffcd500c42";
+fields:c14cde64-da30-4174-a95c-5fe055aea5a2 a form:ConditionalFieldGroup ;
+    mu:uuid "c14cde64-da30-4174-a95c-5fe055aea5a2";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -12,4 +14,4 @@ fields:f176d895-a866-4509-8284-02ffcd500c42 a form:ConditionalFieldGroup ;
         #based on document-type
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/82d0696e-1225-4684-826a-923b2453f5e3>.
       ] ;
-    form:hasFieldGroup fieldGroups:44dbce39-440a-4fbe-b5c7-c48ae3ec0748 .
+    form:hasFieldGroup fieldGroups:7a05bfb3-0971-4b44-9ae3-14f98821519a .

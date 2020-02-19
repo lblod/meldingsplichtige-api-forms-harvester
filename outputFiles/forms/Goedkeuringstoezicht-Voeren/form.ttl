@@ -1,9 +1,11 @@
-fieldGroups:545f43ea-81e7-4b00-b7d9-bc2280aff9c3 a form:FieldGroup ;
-    mu:uuid "545f43ea-81e7-4b00-b7d9-bc2280aff9c3" ; 
-    form:hasField fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:f9519112-2cc1-4672-9966-555910829047;
+fieldGroups:06ed5a6e-b34d-4be6-a639-3f3b9cc08251 a form:FieldGroup ;
+    mu:uuid "06ed5a6e-b34d-4be6-a639-3f3b9cc08251" ; 
+    form:hasField fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+  
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:958e0bed-0362-4ef1-9d31-0189c99de1e4;
 
-fields:f9519112-2cc1-4672-9966-555910829047 a form:ConditionalFieldGroup ;
-    mu:uuid "f9519112-2cc1-4672-9966-555910829047";
+fields:958e0bed-0362-4ef1-9d31-0189c99de1e4 a form:ConditionalFieldGroup ;
+    mu:uuid "958e0bed-0362-4ef1-9d31-0189c99de1e4";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -12,4 +14,4 @@ fields:f9519112-2cc1-4672-9966-555910829047 a form:ConditionalFieldGroup ;
         #based on document-type
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/6af621e2-c807-479e-a6f2-2d64d8339491>.
       ] ;
-    form:hasFieldGroup fieldGroups:545f43ea-81e7-4b00-b7d9-bc2280aff9c3 .
+    form:hasFieldGroup fieldGroups:06ed5a6e-b34d-4be6-a639-3f3b9cc08251 .

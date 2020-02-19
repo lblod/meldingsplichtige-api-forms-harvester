@@ -1,9 +1,11 @@
-fieldGroups:bd1b0eba-9044-4c06-a5a9-8da6802d3c4a a form:FieldGroup ;
-    mu:uuid "bd1b0eba-9044-4c06-a5a9-8da6802d3c4a" ; 
-    form:hasField fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:1137e134-fadd-46a5-af5a-91829f78b491;
+fieldGroups:5ce120aa-ca11-4cd8-9b5e-1bccc7ec8dac a form:FieldGroup ;
+    mu:uuid "5ce120aa-ca11-4cd8-9b5e-1bccc7ec8dac" ; 
+    form:hasField fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+  
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:c2380569-1562-46f7-b077-04449ba5c983;
 
-fields:1137e134-fadd-46a5-af5a-91829f78b491 a form:ConditionalFieldGroup ;
-    mu:uuid "1137e134-fadd-46a5-af5a-91829f78b491";
+fields:c2380569-1562-46f7-b077-04449ba5c983 a form:ConditionalFieldGroup ;
+    mu:uuid "c2380569-1562-46f7-b077-04449ba5c983";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -12,4 +14,4 @@ fields:1137e134-fadd-46a5-af5a-91829f78b491 a form:ConditionalFieldGroup ;
         #based on document-type
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/79414af4-4f57-4ca3-aaa4-f8f1e015e71c>.
       ] ;
-    form:hasFieldGroup fieldGroups:bd1b0eba-9044-4c06-a5a9-8da6802d3c4a .
+    form:hasFieldGroup fieldGroups:5ce120aa-ca11-4cd8-9b5e-1bccc7ec8dac .

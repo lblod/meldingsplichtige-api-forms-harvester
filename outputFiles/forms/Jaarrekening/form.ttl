@@ -1,9 +1,11 @@
-fieldGroups:26d42d7d-c289-45fc-97f0-bb833474158a a form:FieldGroup ;
-    mu:uuid "26d42d7d-c289-45fc-97f0-bb833474158a" ; 
-    form:hasField fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:64d75c47-05d4-453a-a540-1f126bdd0595;
+fieldGroups:16004228-3165-4081-aae5-79d92387bfe3 a form:FieldGroup ;
+    mu:uuid "16004228-3165-4081-aae5-79d92387bfe3" ; 
+    form:hasField fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+  
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:6e14061a-f39d-4807-977f-7e1aa65a9c27;
 
-fields:64d75c47-05d4-453a-a540-1f126bdd0595 a form:ConditionalFieldGroup ;
-    mu:uuid "64d75c47-05d4-453a-a540-1f126bdd0595";
+fields:6e14061a-f39d-4807-977f-7e1aa65a9c27 a form:ConditionalFieldGroup ;
+    mu:uuid "6e14061a-f39d-4807-977f-7e1aa65a9c27";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -12,4 +14,4 @@ fields:64d75c47-05d4-453a-a540-1f126bdd0595 a form:ConditionalFieldGroup ;
         #based on document-type
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/e44c535d-4339-4d15-bdbf-d4be6046de2c>.
       ] ;
-    form:hasFieldGroup fieldGroups:26d42d7d-c289-45fc-97f0-bb833474158a .
+    form:hasFieldGroup fieldGroups:16004228-3165-4081-aae5-79d92387bfe3 .
