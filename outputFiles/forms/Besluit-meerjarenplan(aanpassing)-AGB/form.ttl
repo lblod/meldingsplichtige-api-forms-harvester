@@ -1,17 +1,16 @@
-fieldGroups:f5207149-adc2-4c1d-b1ad-499a97ace31a a form:FieldGroup ;
-    mu:uuid "f5207149-adc2-4c1d-b1ad-499a97ace31a" ; 
+fieldGroups:4c8f6c3c-40d4-4d30-b4a6-3a24485d07ce a form:FieldGroup ;
+    mu:uuid "4c8f6c3c-40d4-4d30-b4a6-3a24485d07ce" ; 
     form:hasField fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
-  
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:4ff31b78-4eae-44a7-bd64-930b15008fd6;
 
-fields:4ff31b78-4eae-44a7-bd64-930b15008fd6 a form:ConditionalFieldGroup ;
-    mu:uuid "4ff31b78-4eae-44a7-bd64-930b15008fd6";
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:6e55d356-7639-45d4-92fa-0cc0d16973aa.
+
+fields:6e55d356-7639-45d4-92fa-0cc0d16973aa a form:ConditionalFieldGroup ;
+    mu:uuid "6e55d356-7639-45d4-92fa-0cc0d16973aa";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
-        sh:path rdf:type;
+        sh:path rdf:type ;
         form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
-        #based on document-type
-        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/849c66c2-ba33-4ac1-a693-be48d8ac7bc7>.
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/849c66c2-ba33-4ac1-a693-be48d8ac7bc7>
       ] ;
-    form:hasFieldGroup fieldGroups:f5207149-adc2-4c1d-b1ad-499a97ace31a .
+    form:hasFieldGroup fieldGroups:4c8f6c3c-40d4-4d30-b4a6-3a24485d07ce .

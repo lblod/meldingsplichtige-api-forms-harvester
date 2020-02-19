@@ -67,7 +67,7 @@ const formsFileName = "type-besluit-aangepast.csv";
 const formsFieldsFileName = "type-besluit-eigenschap-rel.csv";
 
 let forms=[
-  //{formName: str, serialName: str, formFields: arr(uuids of fields), formId: uuid(gen)}, 
+  //{formName: str, serialName: str, formFields: arr(uuids of fields), formId: uuid(generated)}, 
   //...
 ];
 
@@ -92,7 +92,6 @@ parsedInputFiles.find(e=>e.fileName==formsFileName).parsedData.forEach((form, i)
   });
 });
 
-const newFieldsFileName="form-fields.ttl";
 //4-WRITE TO DISK
 forms.forEach((form, i)=>{
   
@@ -116,18 +115,17 @@ fieldGroups:`+form.formId+` a form:FieldGroup ;
   const tempuuid=uuid();
   const additionalTriples=`\
 
-  
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:`+tempuuid+`;
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:`+tempuuid+`.
 
 fields:`+tempuuid+` a form:ConditionalFieldGroup ;
     mu:uuid "`+tempuuid+`";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
-        sh:path rdf:type;
+        sh:path rdf:type ;
         form:conceptScheme <`+form.formConceptScheme+`> ;
-        #based on document-type
-        form:customValue <`+form.formConceptSchemeId+`>.
+        form:customValue <`+form.formConceptSchemeId+`>
       ] ;
     form:hasFieldGroup fieldGroups:`+form.formId+` .`;
   
@@ -246,4 +244,3 @@ fields:`+tempuuid+` a form:ConditionalFieldGroup ;
 //   const test=rdf.serialize(null, formStore, 'https://lblod/formToPrint', 'text/turtle');
 //   debugger;
 // });
-// //TODO: REMOVE : REPLACE WITH SLASH, GO BACK TO PREFIXES
