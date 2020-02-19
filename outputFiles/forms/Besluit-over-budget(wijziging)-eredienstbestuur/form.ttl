@@ -1,9 +1,9 @@
-fieldGroups:b1369bb6-5167-4250-a3d3-0649e144193d a form:FieldGroup ;
-    mu:uuid "b1369bb6-5167-4250-a3d3-0649e144193d" ; 
-    form:hasField fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:395f8dc4-7c79-4081-a1dd-fe10e7346714;
+fieldGroups:21a6094e-e36a-4095-8f24-c1499e072185 a form:FieldGroup ;
+    mu:uuid "21a6094e-e36a-4095-8f24-c1499e072185" ; 
+    form:hasField fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:84a3cf63-f77d-4da6-89d0-d46562a7aab4;
 
-fields:395f8dc4-7c79-4081-a1dd-fe10e7346714 a form:ConditionalFieldGroup ;
-    mu:uuid "395f8dc4-7c79-4081-a1dd-fe10e7346714";
+fields:84a3cf63-f77d-4da6-89d0-d46562a7aab4 a form:ConditionalFieldGroup ;
+    mu:uuid "84a3cf63-f77d-4da6-89d0-d46562a7aab4";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -12,4 +12,4 @@ fields:395f8dc4-7c79-4081-a1dd-fe10e7346714 a form:ConditionalFieldGroup ;
         #based on document-type
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/df261490-cc74-4f80-b783-41c35e720b46>.
       ] ;
-    form:hasFieldGroup fieldGroups:b1369bb6-5167-4250-a3d3-0649e144193d .
+    form:hasFieldGroup fieldGroups:21a6094e-e36a-4095-8f24-c1499e072185 .
