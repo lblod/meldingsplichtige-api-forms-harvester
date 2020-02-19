@@ -33,7 +33,7 @@ ID,INDEX,TITLE,REQUIRED,DISPLAY-TYPE,"INPUT-FIELD
                 }
         }
 }",Nomenclatuur,Nomenclatuur,Nomenclatuur,Nomenclatuur,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
-42,3101,MAR-code,TRUE,dynamic-select,fields:a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d:required,Nomenclature,toezicht-nomenclatures,inzendingVoorToezicht.nomenclature,,the required version of 31,"{
+42,3101,MAR-code,TRUE,dynamic-select,fields:a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d,Nomenclature,toezicht-nomenclatures,inzendingVoorToezicht.nomenclature,,the required version of 31,"{
         ""queryModel"": ""toezicht-nomenclature"",
         ""displayProperty"": ""label"",
         ""filter"": {
@@ -44,10 +44,10 @@ ID,INDEX,TITLE,REQUIRED,DISPLAY-TYPE,"INPUT-FIELD
         }
 }",Nomenclatuur,Nomenclatuur,Nomenclatuur,Nomenclatuur,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
 32,3200,Geldt vanaf,,date,fields:7793c27f-a41b-4665-a876-da9d94075a70,,,inzendingVoorToezicht.dateOfEntryIntoForce,,,,Datum inwerkingtreding,Datum inwerkingtreding,Datum inwerkingtreding,Datum inwerkingtreding,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
-43,3201,Geldt vanaf,TRUE,date,fields:4b32c8fb-9725-4f9f-9872-b04198732483:required,,,inzendingVoorToezicht.dateOfEntryIntoForce,,,,Datum inwerkingtreding,Datum inwerkingtreding,Datum inwerkingtreding,Datum inwerkingtreding,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
+43,3201,Geldt vanaf,TRUE,date,fields:4b32c8fb-9725-4f9f-9872-b04198732483,,,inzendingVoorToezicht.dateOfEntryIntoForce,,,,Datum inwerkingtreding,Datum inwerkingtreding,Datum inwerkingtreding,Datum inwerkingtreding,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
 33,3300,Geldt tot,,date,fields:eeacea67-d327-4952-bbfa-31207823ba87,,,inzendingVoorToezicht.endDate,,,,Einddatum,Einddatum,Einddatum,Einddatum,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
-44,3301,Geldt tot,TRUE,date,fields:3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44:required,,,inzendingVoorToezicht.endDate,,,,Einddatum,Einddatum,Einddatum,Einddatum,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
-34,3400,Soort Belasting,TRUE,dynamic-select,fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c:required,TaxType,toezicht-tax-types,inzendingVoorToezicht.taxType,,,"{
+44,3301,Geldt tot,TRUE,date,fields:3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44,,,inzendingVoorToezicht.endDate,,,,Einddatum,Einddatum,Einddatum,Einddatum,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
+34,3400,Soort Belasting,TRUE,dynamic-select,fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c,TaxType,toezicht-tax-types,inzendingVoorToezicht.taxType,,,"{
         ""queryModel"": ""toezicht-tax-type"",
         ""displayProperty"": ""label"",
         ""filter"": {

@@ -1,0 +1,15 @@
+fieldGroups:1a5395d8-8f4e-49ff-83a3-ebda1ec6f301 a form:FieldGroup ;
+    mu:uuid "1a5395d8-8f4e-49ff-83a3-ebda1ec6f301" ; 
+    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:f159d516-8435-4f02-a6bd-c488522db5cb;
+
+fields:f159d516-8435-4f02-a6bd-c488522db5cb a form:ConditionalFieldGroup ;
+    mu:uuid "f159d516-8435-4f02-a6bd-c488522db5cb";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type;
+        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitDocumentType> ;
+        #based on document-type
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773>.
+      ] ;
+    form:hasFieldGroup fieldGroups:1a5395d8-8f4e-49ff-83a3-ebda1ec6f301 .

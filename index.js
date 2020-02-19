@@ -75,6 +75,8 @@ parsedInputFiles.find(e=>e.fileName==formsFileName).parsedData.forEach((form, i)
   forms[i]={
     formName: form["CODE"],
     serialName: form["CODE"].replace(/\s/g, "-"),
+    formConceptScheme: form["conceptscheme"],
+    formConceptSchemeId: form["conceptschemeid"],
     formId: uuid(),
     formFields: []
   };
@@ -95,7 +97,6 @@ const newFieldsFileName="form-fields.ttl";
 forms.forEach((form, i)=>{
   
   let fields='';
-  let additionalTriples='';
 
   form.formFields.forEach((field, i)=>{
     fields+="fields:"+field;
@@ -113,7 +114,7 @@ fieldGroups:`+form.formId+` a form:FieldGroup ;
     form:hasField `+fields;
 
   const tempuuid=uuid();
-  additionalTriples=`\
+  const additionalTriples=`\
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:`+tempuuid+`;
 
 fields:`+tempuuid+` a form:ConditionalFieldGroup ;
@@ -122,11 +123,13 @@ fields:`+tempuuid+` a form:ConditionalFieldGroup ;
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type;
-        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitDocumentType> ;
+        form:conceptScheme <`+form.formConceptScheme+`> ;
         #based on document-type
-        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773>.
+        form:customValue <`+form.formConceptSchemeId+`>.
       ] ;
     form:hasFieldGroup fieldGroups:`+form.formId+` .`;
+  
+  data+=additionalTriples;
 
   try{
     fs.mkdirSync("./outputFiles/forms/"+form.serialName);
@@ -139,13 +142,11 @@ fields:`+tempuuid+` a form:ConditionalFieldGroup ;
   }
 });
 
-debugger;
+// debugger;
 
-forms.forEach((form, i)=>{
-  rimraf.sync("./outputFiles/forms/"+form.serialName);
-});
-
-
+// forms.forEach((form, i)=>{
+//   rimraf.sync("./outputFiles/forms/"+form.serialName);
+// });
 
 
 
@@ -154,6 +155,8 @@ forms.forEach((form, i)=>{
 
 
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////old
 //2-MATCH FIELDS FROM OLD FORMS TO NEW FIELDS
 // const compareFieldsFileName="eigenschap-aangepast.csv";
 // const newFieldsFileName="form-fields.ttl";
