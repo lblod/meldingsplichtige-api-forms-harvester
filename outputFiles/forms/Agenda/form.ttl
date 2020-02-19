@@ -1,3 +1,0 @@
-fieldGroups:a243b3f3-4080-45b1-ad72-24ac7d8846ea a form:FieldGroup ;
-    mu:uuid "a243b3f3-4080-45b1-ad72-24ac7d8846ea" ; 
-    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
