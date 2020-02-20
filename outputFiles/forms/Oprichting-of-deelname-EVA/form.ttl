@@ -2,14 +2,44 @@
 
 ###########Oprichting-of-deelname-EVA###########
 
-fieldGroups:22b4733f-33a7-4778-90e2-4af1988ce791 a form:FieldGroup ;
-    mu:uuid "22b4733f-33a7-4778-90e2-4af1988ce791" ; 
-    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:4d05c276-213f-48ae-a3ad-454537dbca23 a form:FieldGroup ;
+    mu:uuid "4d05c276-213f-48ae-a3ad-454537dbca23" ; 
+    form:hasField 
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:685e6c74-eb78-4121-b4e3-004716c0acfa.
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
 
-fields:685e6c74-eb78-4121-b4e3-004716c0acfa a form:ConditionalFieldGroup ;
-    mu:uuid "685e6c74-eb78-4121-b4e3-004716c0acfa";
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
+
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Datum-van-publicatie-op-webtoepassing###
+                      fields:49dbe1be-877a-4890-8465-1510ff18ce18,
+
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
+
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:27818959-4c3b-47b7-9cf4-b78a68cab20d.
+
+fields:27818959-4c3b-47b7-9cf4-b78a68cab20d a form:ConditionalFieldGroup ;
+    mu:uuid "27818959-4c3b-47b7-9cf4-b78a68cab20d";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +47,5 @@ fields:685e6c74-eb78-4121-b4e3-004716c0acfa a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/f8c070bd-96e4-43a1-8c6e-532bcd771251>
       ] ;
-    form:hasFieldGroup fieldGroups:22b4733f-33a7-4778-90e2-4af1988ce791 .
+    form:hasFieldGroup fieldGroups:4d05c276-213f-48ae-a3ad-454537dbca23 .
     

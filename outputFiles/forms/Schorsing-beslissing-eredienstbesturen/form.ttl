@@ -2,14 +2,41 @@
 
 ###########Schorsing-beslissing-eredienstbesturen###########
 
-fieldGroups:18d8892c-9ec4-43b1-ba38-11c89300db0f a form:FieldGroup ;
-    mu:uuid "18d8892c-9ec4-43b1-ba38-11c89300db0f" ; 
-    form:hasField fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:b919c21f-2021-4d6e-9f0b-d5dd8a1816c2 a form:FieldGroup ;
+    mu:uuid "b919c21f-2021-4d6e-9f0b-d5dd8a1816c2" ; 
+    form:hasField 
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:1cac2ff1-46c1-49d0-9333-edbd66368ff7.
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
 
-fields:1cac2ff1-46c1-49d0-9333-edbd66368ff7 a form:ConditionalFieldGroup ;
-    mu:uuid "1cac2ff1-46c1-49d0-9333-edbd66368ff7";
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:a2ea0ad5-3d73-4ed4-bdbe-e1a7648183c0.
+
+fields:a2ea0ad5-3d73-4ed4-bdbe-e1a7648183c0 a form:ConditionalFieldGroup ;
+    mu:uuid "a2ea0ad5-3d73-4ed4-bdbe-e1a7648183c0";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +44,5 @@ fields:1cac2ff1-46c1-49d0-9333-edbd66368ff7 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/b25faa84-3ab5-47ae-98c0-1b389c77b827>
       ] ;
-    form:hasFieldGroup fieldGroups:18d8892c-9ec4-43b1-ba38-11c89300db0f .
+    form:hasFieldGroup fieldGroups:b919c21f-2021-4d6e-9f0b-d5dd8a1816c2 .
     

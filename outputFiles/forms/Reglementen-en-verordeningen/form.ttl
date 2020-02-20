@@ -2,14 +2,35 @@
 
 ###########Reglementen-en-verordeningen###########
 
-fieldGroups:a6f8b41f-d067-46e3-ac43-ccf97f0a970b a form:FieldGroup ;
-    mu:uuid "a6f8b41f-d067-46e3-ac43-ccf97f0a970b" ; 
-    form:hasField fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:79c54e95-04cb-4297-9db0-e85fd251c660 a form:FieldGroup ;
+    mu:uuid "79c54e95-04cb-4297-9db0-e85fd251c660" ; 
+    form:hasField 
+                      ###Datum-van-publicatie-op-webtoepassing###
+                      fields:49dbe1be-877a-4890-8465-1510ff18ce18,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:153762a7-aafe-421f-b8f7-0749783682de.
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:153762a7-aafe-421f-b8f7-0749783682de a form:ConditionalFieldGroup ;
-    mu:uuid "153762a7-aafe-421f-b8f7-0749783682de";
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Type-reglement/verordening###
+                      fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:4806594c-636c-4fd2-a589-73086d9f1cfe.
+
+fields:4806594c-636c-4fd2-a589-73086d9f1cfe a form:ConditionalFieldGroup ;
+    mu:uuid "4806594c-636c-4fd2-a589-73086d9f1cfe";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +38,5 @@ fields:153762a7-aafe-421f-b8f7-0749783682de a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/67378dd0-5413-474b-8996-d992ef81637a>
       ] ;
-    form:hasFieldGroup fieldGroups:a6f8b41f-d067-46e3-ac43-ccf97f0a970b .
+    form:hasFieldGroup fieldGroups:79c54e95-04cb-4297-9db0-e85fd251c660 .
     

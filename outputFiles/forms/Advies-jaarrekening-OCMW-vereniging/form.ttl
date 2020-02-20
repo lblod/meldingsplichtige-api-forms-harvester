@@ -2,14 +2,32 @@
 
 ###########Advies-jaarrekening-OCMW-vereniging###########
 
-fieldGroups:e71c786e-83c1-4baa-bb28-b296eb3883a5 a form:FieldGroup ;
-    mu:uuid "e71c786e-83c1-4baa-bb28-b296eb3883a5" ; 
-    form:hasField fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:0919f9e1-fb72-426e-9175-9422019bd1b7 a form:FieldGroup ;
+    mu:uuid "0919f9e1-fb72-426e-9175-9422019bd1b7" ; 
+    form:hasField 
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:1d5d10a4-b995-4655-ab2c-2bdda6b4b31a.
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:1d5d10a4-b995-4655-ab2c-2bdda6b4b31a a form:ConditionalFieldGroup ;
-    mu:uuid "1d5d10a4-b995-4655-ab2c-2bdda6b4b31a";
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:e6ccf4d6-3ef0-4ee2-8f83-fcc7fcbe507e.
+
+fields:e6ccf4d6-3ef0-4ee2-8f83-fcc7fcbe507e a form:ConditionalFieldGroup ;
+    mu:uuid "e6ccf4d6-3ef0-4ee2-8f83-fcc7fcbe507e";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +35,5 @@ fields:1d5d10a4-b995-4655-ab2c-2bdda6b4b31a a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/4350cdda-8291-4055-9026-5c7429357fce>
       ] ;
-    form:hasFieldGroup fieldGroups:e71c786e-83c1-4baa-bb28-b296eb3883a5 .
+    form:hasFieldGroup fieldGroups:0919f9e1-fb72-426e-9175-9422019bd1b7 .
     

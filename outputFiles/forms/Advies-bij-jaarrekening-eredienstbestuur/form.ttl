@@ -2,14 +2,47 @@
 
 ###########Advies-bij-jaarrekening-eredienstbestuur###########
 
-fieldGroups:02af86b1-46e0-433b-b44e-1676e20c42cd a form:FieldGroup ;
-    mu:uuid "02af86b1-46e0-433b-b44e-1676e20c42cd" ; 
-    form:hasField fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:41737f90-02d6-4036-8d60-5d5b6ccf939c, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:1625015f-577b-40dc-b0b0-3c310763695c a form:FieldGroup ;
+    mu:uuid "1625015f-577b-40dc-b0b0-3c310763695c" ; 
+    form:hasField 
+                      ###Rapportjaar###
+                      fields:41737f90-02d6-4036-8d60-5d5b6ccf939c,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0e96f848-f14f-4ee9-8f00-84a6d78bbe76.
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
 
-fields:0e96f848-f14f-4ee9-8f00-84a6d78bbe76 a form:ConditionalFieldGroup ;
-    mu:uuid "0e96f848-f14f-4ee9-8f00-84a6d78bbe76";
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Rapportjaar###
+                      fields:41737f90-02d6-4036-8d60-5d5b6ccf939c,
+
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
+
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:ecdfb13e-016e-4c4e-8f7e-e94460477b0d.
+
+fields:ecdfb13e-016e-4c4e-8f7e-e94460477b0d a form:ConditionalFieldGroup ;
+    mu:uuid "ecdfb13e-016e-4c4e-8f7e-e94460477b0d";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +50,5 @@ fields:0e96f848-f14f-4ee9-8f00-84a6d78bbe76 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/79414af4-4f57-4ca3-aaa4-f8f1e015e71c>
       ] ;
-    form:hasFieldGroup fieldGroups:02af86b1-46e0-433b-b44e-1676e20c42cd .
+    form:hasFieldGroup fieldGroups:1625015f-577b-40dc-b0b0-3c310763695c .
     

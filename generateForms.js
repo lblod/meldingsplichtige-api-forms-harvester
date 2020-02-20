@@ -56,9 +56,8 @@ let oldIdNewIdMap=[
 
 parsedInputFiles.find(e=>e.fileName==compareFieldsFileName).parsedData.forEach((e, i)=>{
   if(e["ID"] && e["INPUT-FIELD\n"].match(/fields:/g)){
-
     e["INPUT-FIELD\n"]=e["INPUT-FIELD\n"].replace("fields:", "");
-    oldIdNewIdMap.push({oldId:e["ID"], newId:e["INPUT-FIELD\n"]});
+    oldIdNewIdMap.push({oldId:e["ID"], newId:e["INPUT-FIELD\n"], fieldName: e["TITLE"].replace(/\s/g, "-")});
   }
 });
 
@@ -86,8 +85,8 @@ parsedInputFiles.find(e=>e.fileName==formsFileName).parsedData.forEach((form, i)
     
     if(oldFormId==field["TYPEBESLUITID"]){
       
-      const newFieldId=oldIdNewIdMap.find(id=>id.oldId==field["EIGENSCHAPID"]).newId;
-      forms[i].formFields.push(newFieldId);
+      const newField=oldIdNewIdMap.find(id=>id.oldId==field["EIGENSCHAPID"]);
+      forms[i].formFields.push(newField);
     }
   });
 });
@@ -98,12 +97,14 @@ forms.forEach((form, i)=>{
   let fields='';
 
   form.formFields.forEach((field, i)=>{
-    fields+="fields:"+field;
+    fields+=`
+                      ###`+field.fieldName+`###
+                      fields:`+field.newId;
     if(i==form.formFields.length-1){
-      fields+="."
+      fields+=".\n"
     }
     else{
-      fields+=", "
+      fields+=",\n"
     }
   });
 
@@ -135,15 +136,15 @@ fields:`+tempuuid+` a form:ConditionalFieldGroup ;
   
   data+=additionalTriples;
 
-  try{
-    fs.mkdirSync("./outputFiles/forms/"+form.serialName);
+  // try{
+    fs.mkdirSync("./outputFiles/forms/"+form.serialName, {recursive: true});
     fs.writeFileSync("./outputFiles/forms/"+form.serialName+"/form.ttl", data);
-  }
-  catch(error){
-    rimraf.sync("./outputFiles/forms/"+form.serialName);
-    fs.mkdirSync("./outputFiles/forms/"+form.serialName);
-    fs.writeFileSync("./outputFiles/forms/"+form.serialName+"/form.ttl", data);
-  }
+  // }
+  // catch(error){
+  //   rimraf.sync("./outputFiles/forms/"+form.serialName);
+  //   fs.mkdirSync("./outputFiles/forms/"+form.serialName);
+  //   fs.writeFileSync("./outputFiles/forms/"+form.serialName+"/form.ttl", data);
+  // }
 });
 
 // debugger;

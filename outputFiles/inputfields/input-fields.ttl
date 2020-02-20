@@ -70,10 +70,10 @@ fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb a form:Field ;
       [ a form:ConceptSchemeConstraint ; #TODO
         form:grouping form:Bag ;
         sh:path lblodBesluit:authenticityType ;
-        form:conceptScheme <http://lblod.data.gift/concept-schemes/9cf6fa63-1f49-4d53-af06-e1c235ece10b> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/26be3ec9-5b2e-405a-8e64-ca88d2b13adc> ;
         sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
       ] ;
-    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/9cf6fa63-1f49-4d53-af06-e1c235ece10b"}""" ;
+    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/26be3ec9-5b2e-405a-8e64-ca88d2b13adc"}""" ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
@@ -263,10 +263,10 @@ fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c a form:Field ;
     [ a form:ConceptSchemeConstraint ; #TODO
         form:grouping form:Bag ;
         sh:path lblodBesluit:taxType ;
-        form:conceptScheme <http://lblod.data.gift/concept-schemes/ac9bc402-c8e6-41fd-ad57-fad15622e560>  ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6>  ;
         sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
       ] ;
-    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/ac9bc402-c8e6-41fd-ad57-fad15622e560"}""" ;
+    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6"}""" ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
@@ -305,10 +305,10 @@ fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6 a form:Field ;
     [ a form:ConceptSchemeConstraint ; #TODO
         form:grouping form:Bag ;
         sh:path lblodBesluit:taxType ;
-        form:conceptScheme <http://lblod.data.gift/concept-schemes/ac9bc402-c8e6-41fd-ad57-fad15622e560>  ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6>  ;
         sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
       ] ;
-    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/ac9bc402-c8e6-41fd-ad57-fad15622e560"}""" ;
+    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6"}""" ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 

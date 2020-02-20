@@ -2,14 +2,29 @@
 
 ###########Agenda###########
 
-fieldGroups:2ac7d834-b538-4d63-855a-014e82801995 a form:FieldGroup ;
-    mu:uuid "2ac7d834-b538-4d63-855a-014e82801995" ; 
-    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:bad7c939-4218-458b-b826-b8e4cd5ef438 a form:FieldGroup ;
+    mu:uuid "bad7c939-4218-458b-b826-b8e4cd5ef438" ; 
+    form:hasField 
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:6e6956ca-744b-4a8e-a3a9-9f69b32a735e.
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:6e6956ca-744b-4a8e-a3a9-9f69b32a735e a form:ConditionalFieldGroup ;
-    mu:uuid "6e6956ca-744b-4a8e-a3a9-9f69b32a735e";
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:a54751bd-2ee2-43b8-bcbc-1a154460191a.
+
+fields:a54751bd-2ee2-43b8-bcbc-1a154460191a a form:ConditionalFieldGroup ;
+    mu:uuid "a54751bd-2ee2-43b8-bcbc-1a154460191a";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +32,5 @@ fields:6e6956ca-744b-4a8e-a3a9-9f69b32a735e a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/13fefad6-a9d6-4025-83b5-e4cbee3a8965>
       ] ;
-    form:hasFieldGroup fieldGroups:2ac7d834-b538-4d63-855a-014e82801995 .
+    form:hasFieldGroup fieldGroups:bad7c939-4218-458b-b826-b8e4cd5ef438 .
     

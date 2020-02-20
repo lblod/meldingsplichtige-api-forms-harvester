@@ -2,14 +2,32 @@
 
 ###########Rechtspositieregeling-(RPR)###########
 
-fieldGroups:30bc91f8-03bf-429a-b575-280d4e64e768 a form:FieldGroup ;
-    mu:uuid "30bc91f8-03bf-429a-b575-280d4e64e768" ; 
-    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:513ad026-49e7-475e-b9e8-094923996517 a form:FieldGroup ;
+    mu:uuid "513ad026-49e7-475e-b9e8-094923996517" ; 
+    form:hasField 
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0800a6b8-03eb-43d1-a568-ec611e90c1a6.
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:0800a6b8-03eb-43d1-a568-ec611e90c1a6 a form:ConditionalFieldGroup ;
-    mu:uuid "0800a6b8-03eb-43d1-a568-ec611e90c1a6";
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Datum-van-publicatie-op-webtoepassing###
+                      fields:49dbe1be-877a-4890-8465-1510ff18ce18,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:474008b2-ac82-4579-844e-9204c1c9d484.
+
+fields:474008b2-ac82-4579-844e-9204c1c9d484 a form:ConditionalFieldGroup ;
+    mu:uuid "474008b2-ac82-4579-844e-9204c1c9d484";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +35,5 @@ fields:0800a6b8-03eb-43d1-a568-ec611e90c1a6 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/fb21d14b-734b-48f4-bd4e-888163fd08e8>
       ] ;
-    form:hasFieldGroup fieldGroups:30bc91f8-03bf-429a-b575-280d4e64e768 .
+    form:hasFieldGroup fieldGroups:513ad026-49e7-475e-b9e8-094923996517 .
     

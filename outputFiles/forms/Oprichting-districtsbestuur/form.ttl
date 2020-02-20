@@ -2,14 +2,50 @@
 
 ###########Oprichting-districtsbestuur###########
 
-fieldGroups:14491060-a6b2-42d1-964e-e7e45b704fbf a form:FieldGroup ;
-    mu:uuid "14491060-a6b2-42d1-964e-e7e45b704fbf" ; 
-    form:hasField fields:0cdfe85f-ec65-498f-bd26-0ec611967de0, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:0cdfe85f-ec65-498f-bd26-0ec611967de0, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+fieldGroups:02dbbff7-2af7-4baa-8880-ad324d0d49a6 a form:FieldGroup ;
+    mu:uuid "02dbbff7-2af7-4baa-8880-ad324d0d49a6" ; 
+    form:hasField 
+                      ###Opmerking###
+                      fields:0cdfe85f-ec65-498f-bd26-0ec611967de0,
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0c421e64-973d-4391-9a53-173150df0b78.
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
-fields:0c421e64-973d-4391-9a53-173150df0b78 a form:ConditionalFieldGroup ;
-    mu:uuid "0c421e64-973d-4391-9a53-173150df0b78";
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
+
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Opmerking###
+                      fields:0cdfe85f-ec65-498f-bd26-0ec611967de0,
+
+                      ###Datum-van-publicatie-op-webtoepassing###
+                      fields:49dbe1be-877a-4890-8465-1510ff18ce18,
+
+                      ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
+                      fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
+
+                      ###Naam-betreffend-bedrijf/bestuur###
+                      fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:47879a2b-af0b-4cca-b0c6-45fac3212519.
+
+fields:47879a2b-af0b-4cca-b0c6-45fac3212519 a form:ConditionalFieldGroup ;
+    mu:uuid "47879a2b-af0b-4cca-b0c6-45fac3212519";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -17,5 +53,5 @@ fields:0c421e64-973d-4391-9a53-173150df0b78 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/380674ee-0894-4c41-bcc1-9deaeb9d464c>
       ] ;
-    form:hasFieldGroup fieldGroups:14491060-a6b2-42d1-964e-e7e45b704fbf .
+    form:hasFieldGroup fieldGroups:02dbbff7-2af7-4baa-8880-ad324d0d49a6 .
     
