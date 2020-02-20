@@ -2,8 +2,8 @@
 
 ###########Verslag-lokale-betrokkenheid-eredienstbesturen###########
 
-fieldGroups:cf5647f3-7d35-4c74-abfa-f9de08c13c40 a form:FieldGroup ;
-    mu:uuid "cf5647f3-7d35-4c74-abfa-f9de08c13c40" ; 
+fieldGroups:319fc495-408d-4b3d-b217-dcbdf6f414d5 a form:FieldGroup ;
+    mu:uuid "319fc495-408d-4b3d-b217-dcbdf6f414d5" ; 
     form:hasField 
                       ###Naam-betreffend-bedrijf/bestuur###
                       fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
@@ -33,10 +33,10 @@ fieldGroups:cf5647f3-7d35-4c74-abfa-f9de08c13c40 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:2c7a072f-1820-4951-ae9a-7cf77ed5188a.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d99c663e-32ae-4865-bdeb-f961fda68d61.
 
-fields:2c7a072f-1820-4951-ae9a-7cf77ed5188a a form:ConditionalFieldGroup ;
-    mu:uuid "2c7a072f-1820-4951-ae9a-7cf77ed5188a";
+fields:d99c663e-32ae-4865-bdeb-f961fda68d61 a form:ConditionalFieldGroup ;
+    mu:uuid "d99c663e-32ae-4865-bdeb-f961fda68d61";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -44,5 +44,5 @@ fields:2c7a072f-1820-4951-ae9a-7cf77ed5188a a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/e274f1b1-7e84-457d-befe-070afec6b752>
       ] ;
-    form:hasFieldGroup fieldGroups:cf5647f3-7d35-4c74-abfa-f9de08c13c40 .
+    form:hasFieldGroup fieldGroups:319fc495-408d-4b3d-b217-dcbdf6f414d5 .
 

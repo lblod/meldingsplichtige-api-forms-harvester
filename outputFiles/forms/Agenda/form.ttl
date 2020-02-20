@@ -2,8 +2,8 @@
 
 ###########Agenda###########
 
-fieldGroups:2a36d630-77f6-4341-9251-c26c75cce710 a form:FieldGroup ;
-    mu:uuid "2a36d630-77f6-4341-9251-c26c75cce710" ; 
+fieldGroups:0945ac20-fec2-4a08-8cb5-ddec808e0c4c a form:FieldGroup ;
+    mu:uuid "0945ac20-fec2-4a08-8cb5-ddec808e0c4c" ; 
     form:hasField 
                       ###Datum-zitting/besluit###
                       fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
@@ -21,10 +21,10 @@ fieldGroups:2a36d630-77f6-4341-9251-c26c75cce710 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:71e53c9c-3a5a-4379-8659-f29dd79c42bb.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:e14b7ae5-f527-4fb8-b1b8-84779bac960b.
 
-fields:71e53c9c-3a5a-4379-8659-f29dd79c42bb a form:ConditionalFieldGroup ;
-    mu:uuid "71e53c9c-3a5a-4379-8659-f29dd79c42bb";
+fields:e14b7ae5-f527-4fb8-b1b8-84779bac960b a form:ConditionalFieldGroup ;
+    mu:uuid "e14b7ae5-f527-4fb8-b1b8-84779bac960b";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -32,5 +32,5 @@ fields:71e53c9c-3a5a-4379-8659-f29dd79c42bb a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/13fefad6-a9d6-4025-83b5-e4cbee3a8965>
       ] ;
-    form:hasFieldGroup fieldGroups:2a36d630-77f6-4341-9251-c26c75cce710 .
+    form:hasFieldGroup fieldGroups:0945ac20-fec2-4a08-8cb5-ddec808e0c4c .
 

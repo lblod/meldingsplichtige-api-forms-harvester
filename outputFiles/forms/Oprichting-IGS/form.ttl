@@ -2,8 +2,8 @@
 
 ###########Oprichting-IGS###########
 
-fieldGroups:e2cf3dd3-d875-4e38-9f17-163a41d2db9a a form:FieldGroup ;
-    mu:uuid "e2cf3dd3-d875-4e38-9f17-163a41d2db9a" ; 
+fieldGroups:ba1888ea-8741-4a4c-911b-74e2335a1680 a form:FieldGroup ;
+    mu:uuid "ba1888ea-8741-4a4c-911b-74e2335a1680" ; 
     form:hasField 
                       ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
                       fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
@@ -36,10 +36,10 @@ fieldGroups:e2cf3dd3-d875-4e38-9f17-163a41d2db9a a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:ec76d76f-5b9f-4d6c-a547-46e58eaa90ad.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0269fc98-4ba8-476a-b0d5-817f5f6928aa.
 
-fields:ec76d76f-5b9f-4d6c-a547-46e58eaa90ad a form:ConditionalFieldGroup ;
-    mu:uuid "ec76d76f-5b9f-4d6c-a547-46e58eaa90ad";
+fields:0269fc98-4ba8-476a-b0d5-817f5f6928aa a form:ConditionalFieldGroup ;
+    mu:uuid "0269fc98-4ba8-476a-b0d5-817f5f6928aa";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -47,5 +47,5 @@ fields:ec76d76f-5b9f-4d6c-a547-46e58eaa90ad a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/1105564e-30c7-4371-a864-6b7329cdae6f>
       ] ;
-    form:hasFieldGroup fieldGroups:e2cf3dd3-d875-4e38-9f17-163a41d2db9a .
+    form:hasFieldGroup fieldGroups:ba1888ea-8741-4a4c-911b-74e2335a1680 .
 
