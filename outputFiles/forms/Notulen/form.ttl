@@ -2,20 +2,20 @@
 
 ###########Notulen###########
 
-fieldGroups:63d3a5c8-1d35-4714-a22d-50cc16f2d1e8 a form:FieldGroup ;
-    mu:uuid "63d3a5c8-1d35-4714-a22d-50cc16f2d1e8" ; 
-    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+fieldGroups:0abfec20-df07-4179-97b4-5082cc4ea7d1 a form:FieldGroup ;
+    mu:uuid "0abfec20-df07-4179-97b4-5082cc4ea7d1" ; 
+    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:e9a7e8dd-b226-4da5-a77e-8282e4b98903.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:35346394-3dd5-4444-be62-94cc5c9eb4fc.
 
-fields:e9a7e8dd-b226-4da5-a77e-8282e4b98903 a form:ConditionalFieldGroup ;
-    mu:uuid "e9a7e8dd-b226-4da5-a77e-8282e4b98903";
+fields:35346394-3dd5-4444-be62-94cc5c9eb4fc a form:ConditionalFieldGroup ;
+    mu:uuid "35346394-3dd5-4444-be62-94cc5c9eb4fc";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitDocumentType> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773>
       ] ;
-    form:hasFieldGroup fieldGroups:63d3a5c8-1d35-4714-a22d-50cc16f2d1e8 .
+    form:hasFieldGroup fieldGroups:0abfec20-df07-4179-97b4-5082cc4ea7d1 .
     

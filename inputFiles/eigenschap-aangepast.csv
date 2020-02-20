@@ -78,9 +78,9 @@ ID,INDEX,TITLE,REQUIRED,DISPLAY-TYPE,"INPUT-FIELD
                 }
         }
 }",Type reglement,Type reglement,Type reglement,Type reglement,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
-39,3900,Links naar documenten,,file-addresses,fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c,,,inzendingVoorToezicht.fileAddresses,,"Was vroeger wel verplicht, maar we hebben dit er tijdelijk uitgelaten omdat Pieter ervan uitgaat dat het te ingrijpend is. Ooit moet dit veld dan terug.",,File URLs,Links naar documenten,Links naar documenten,Links naar documenten,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
-40,4000,Links naar documenten,,file-addresses,fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c,,,inzendingVoorToezicht.fileAddresses,,allemaal hetzelfde nu,,File URLs (optional),Links naar documenten,Links naar documenten,Links naar documenten,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
-41,4100,Bestanden,,files,fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c,,,inzendingVoorToezicht.files,,,,File upload,Bestanden,Bestanden,Bestanden,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
+39,3900,Links naar documenten,,file-addresses,fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,,,inzendingVoorToezicht.fileAddresses,,"Was vroeger wel verplicht, maar we hebben dit er tijdelijk uitgelaten omdat Pieter ervan uitgaat dat het te ingrijpend is. Ooit moet dit veld dan terug.",,File URLs,Links naar documenten,Links naar documenten,Links naar documenten,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
+40,4000,Links naar documenten,,file-addresses,fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,,,inzendingVoorToezicht.fileAddresses,,allemaal hetzelfde nu,,File URLs (optional),Links naar documenten,Links naar documenten,Links naar documenten,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
+41,4100,Bestanden,,files,fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,,,inzendingVoorToezicht.files,,,,File upload,Bestanden,Bestanden,Bestanden,01/01/00,31/12/99,"01/01/00 00:00:01,000000000",INIT,"01/01/00 00:00:01,000000000",INIT,N
 46,3502,"Opcentiem
 ",,vlabel-opcentiem,fields:1ee5132e-28c0-4292-9fe6-24c7be456580,TaxRate,simplified-tax-rates,inzendingVoorToezicht.simplifiedTaxRates,,VLABEL stuff,,"Opcentiem
 ","Opcentiem

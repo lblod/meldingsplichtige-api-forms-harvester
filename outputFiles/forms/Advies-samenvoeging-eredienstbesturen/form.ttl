@@ -2,20 +2,20 @@
 
 ###########Advies-samenvoeging-eredienstbesturen###########
 
-fieldGroups:0f3c539d-2a5e-40f6-8aca-42a0fa0ddfae a form:FieldGroup ;
-    mu:uuid "0f3c539d-2a5e-40f6-8aca-42a0fa0ddfae" ; 
-    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+fieldGroups:ac4ecc09-47e7-417d-a432-92beda279cd7 a form:FieldGroup ;
+    mu:uuid "ac4ecc09-47e7-417d-a432-92beda279cd7" ; 
+    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:35c6e2e2-ab98-4a87-97aa-c3922ed913a1.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:b9de3c06-40ef-40df-a05c-6b69d6baee40.
 
-fields:35c6e2e2-ab98-4a87-97aa-c3922ed913a1 a form:ConditionalFieldGroup ;
-    mu:uuid "35c6e2e2-ab98-4a87-97aa-c3922ed913a1";
+fields:b9de3c06-40ef-40df-a05c-6b69d6baee40 a form:ConditionalFieldGroup ;
+    mu:uuid "b9de3c06-40ef-40df-a05c-6b69d6baee40";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/4efa4632-efc6-40d5-815a-dec785fbceac>
       ] ;
-    form:hasFieldGroup fieldGroups:0f3c539d-2a5e-40f6-8aca-42a0fa0ddfae .
+    form:hasFieldGroup fieldGroups:ac4ecc09-47e7-417d-a432-92beda279cd7 .
     

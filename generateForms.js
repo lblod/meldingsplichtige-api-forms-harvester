@@ -126,7 +126,7 @@ fields:`+tempuuid+` a form:ConditionalFieldGroup ;
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <`+form.formConceptScheme+`> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <`+form.formConceptSchemeId+`>
       ] ;
     form:hasFieldGroup fieldGroups:`+form.formId+` .

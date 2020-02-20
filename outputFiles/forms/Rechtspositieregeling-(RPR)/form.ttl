@@ -2,20 +2,20 @@
 
 ###########Rechtspositieregeling-(RPR)###########
 
-fieldGroups:671b7266-6332-4cec-8e70-ea28265a2837 a form:FieldGroup ;
-    mu:uuid "671b7266-6332-4cec-8e70-ea28265a2837" ; 
-    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+fieldGroups:30bc91f8-03bf-429a-b575-280d4e64e768 a form:FieldGroup ;
+    mu:uuid "30bc91f8-03bf-429a-b575-280d4e64e768" ; 
+    form:hasField fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:88d9353e-d683-45c3-82a2-4a5f88cb0d6e.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0800a6b8-03eb-43d1-a568-ec611e90c1a6.
 
-fields:88d9353e-d683-45c3-82a2-4a5f88cb0d6e a form:ConditionalFieldGroup ;
-    mu:uuid "88d9353e-d683-45c3-82a2-4a5f88cb0d6e";
+fields:0800a6b8-03eb-43d1-a568-ec611e90c1a6 a form:ConditionalFieldGroup ;
+    mu:uuid "0800a6b8-03eb-43d1-a568-ec611e90c1a6";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/fb21d14b-734b-48f4-bd4e-888163fd08e8>
       ] ;
-    form:hasFieldGroup fieldGroups:671b7266-6332-4cec-8e70-ea28265a2837 .
+    form:hasFieldGroup fieldGroups:30bc91f8-03bf-429a-b575-280d4e64e768 .
     

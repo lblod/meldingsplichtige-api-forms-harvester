@@ -2,20 +2,20 @@
 
 ###########Goedkeuringstoezicht-Voeren###########
 
-fieldGroups:532ce045-809e-4e4b-a9dc-0ae76f0697a4 a form:FieldGroup ;
-    mu:uuid "532ce045-809e-4e4b-a9dc-0ae76f0697a4" ; 
-    form:hasField fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+fieldGroups:c18d9943-b3ec-43ba-8c71-d4a18dbc5678 a form:FieldGroup ;
+    mu:uuid "c18d9943-b3ec-43ba-8c71-d4a18dbc5678" ; 
+    form:hasField fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:09982dd4-2e94-4970-b8d8-35c90aa2da71.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:f95ce957-86fc-4edd-a8da-915cf7c7c4eb.
 
-fields:09982dd4-2e94-4970-b8d8-35c90aa2da71 a form:ConditionalFieldGroup ;
-    mu:uuid "09982dd4-2e94-4970-b8d8-35c90aa2da71";
+fields:f95ce957-86fc-4edd-a8da-915cf7c7c4eb a form:ConditionalFieldGroup ;
+    mu:uuid "f95ce957-86fc-4edd-a8da-915cf7c7c4eb";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/6af621e2-c807-479e-a6f2-2d64d8339491>
       ] ;
-    form:hasFieldGroup fieldGroups:532ce045-809e-4e4b-a9dc-0ae76f0697a4 .
+    form:hasFieldGroup fieldGroups:c18d9943-b3ec-43ba-8c71-d4a18dbc5678 .
     

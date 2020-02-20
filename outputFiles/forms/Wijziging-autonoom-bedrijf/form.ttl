@@ -2,20 +2,20 @@
 
 ###########Wijziging-autonoom-bedrijf###########
 
-fieldGroups:82b81753-2002-4e40-8f7d-8e28432df727 a form:FieldGroup ;
-    mu:uuid "82b81753-2002-4e40-8f7d-8e28432df727" ; 
-    form:hasField fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+fieldGroups:f3c679c5-95fc-4b4f-87a6-4302efb58f2d a form:FieldGroup ;
+    mu:uuid "f3c679c5-95fc-4b4f-87a6-4302efb58f2d" ; 
+    form:hasField fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac, fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235, fields:78bfbd91-0778-4573-a52d-4c53b3c512eb, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:660bcff8-0365-48d3-bfd6-d086f6600b7a.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:4feea163-69b4-4b15-b429-fba825c78d6b.
 
-fields:660bcff8-0365-48d3-bfd6-d086f6600b7a a form:ConditionalFieldGroup ;
-    mu:uuid "660bcff8-0365-48d3-bfd6-d086f6600b7a";
+fields:4feea163-69b4-4b15-b429-fba825c78d6b a form:ConditionalFieldGroup ;
+    mu:uuid "4feea163-69b4-4b15-b429-fba825c78d6b";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/c945b531-4742-43fe-af55-b13da6ecc6fe>
       ] ;
-    form:hasFieldGroup fieldGroups:82b81753-2002-4e40-8f7d-8e28432df727 .
+    form:hasFieldGroup fieldGroups:f3c679c5-95fc-4b4f-87a6-4302efb58f2d .
     

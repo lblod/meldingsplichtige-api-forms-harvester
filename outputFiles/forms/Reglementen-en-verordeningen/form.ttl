@@ -2,20 +2,20 @@
 
 ###########Reglementen-en-verordeningen###########
 
-fieldGroups:9d83b1d7-0a51-49d8-abb0-47bacf51e8b3 a form:FieldGroup ;
-    mu:uuid "9d83b1d7-0a51-49d8-abb0-47bacf51e8b3" ; 
-    form:hasField fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95c.
+fieldGroups:a6f8b41f-d067-46e3-ac43-ccf97f0a970b a form:FieldGroup ;
+    mu:uuid "a6f8b41f-d067-46e3-ac43-ccf97f0a970b" ; 
+    form:hasField fields:49dbe1be-877a-4890-8465-1510ff18ce18, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb, fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d, fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b, fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:dd6d514a-df16-44d8-acba-c428e58d6b85.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:153762a7-aafe-421f-b8f7-0749783682de.
 
-fields:dd6d514a-df16-44d8-acba-c428e58d6b85 a form:ConditionalFieldGroup ;
-    mu:uuid "dd6d514a-df16-44d8-acba-c428e58d6b85";
+fields:153762a7-aafe-421f-b8f7-0749783682de a form:ConditionalFieldGroup ;
+    mu:uuid "153762a7-aafe-421f-b8f7-0749783682de";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <https://data.vlaanderen.be/id/conceptscheme/BesluitType> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/67378dd0-5413-474b-8996-d992ef81637a>
       ] ;
-    form:hasFieldGroup fieldGroups:9d83b1d7-0a51-49d8-abb0-47bacf51e8b3 .
+    form:hasFieldGroup fieldGroups:a6f8b41f-d067-46e3-ac43-ccf97f0a970b .
     
