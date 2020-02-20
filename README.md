@@ -9,7 +9,7 @@ Note: this will overwrite folders!
 
 ### concatenating folder structure files in one file
 ```
-docker run -it --rm -v "$PWD":/app -w /app node:10 ./generate-forms.sh
+docker run -it --rm -v "$PWD":/app -w /app node:10 ./concat-forms.sh
 ```
 
 ### both steps in one command
