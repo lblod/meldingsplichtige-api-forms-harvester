@@ -70,10 +70,10 @@ fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb a form:Field ;
       [ a form:ConceptSchemeConstraint ; #TODO
         form:grouping form:Bag ;
         sh:path lblodBesluit:authenticityType ;
-        form:conceptScheme <http://lblod.data.gift/concept-schemes/26be3ec9-5b2e-405a-8e64-ca88d2b13adc> ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/5cecec47-ba66-4d7a-ac9d-a1e7962ca4e2> ;
         sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
       ] ;
-    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/26be3ec9-5b2e-405a-8e64-ca88d2b13adc"}""" ;
+    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/5cecec47-ba66-4d7a-ac9d-a1e7962ca4e2"}""" ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
@@ -248,7 +248,6 @@ fields:3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44 a form:Field ;
     form:displayType displayTypes:date ;
     sh:group fields:aDynamicPropertyGroup .
 
-# TODO: complex skos scheme
 fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c a form:Field ;
     mu:uuid "7cd14dfd-81ff-4a5d-8374-5879c5877c4c" ;
     sh:name "Soort Belasting" ;
@@ -287,10 +286,6 @@ fields:49dbe1be-877a-4890-8465-1510ff18ce18 a form:Field ;
     form:displayType displayTypes:date ;
     sh:group fields:aDynamicPropertyGroup .
 
-# TODO: complex skos scheme
-# They come from the same code list, but have a broader range.
-# some complex validation will occur here
-# https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten/blob/master/codelijsten/besluit-type.ttl#L433
 fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6 a form:Field ;
     mu:uuid "e834ec56-2db3-43d8-8a54-baf6cc0463c6" ;
     sh:name "Type reglement/verordening" ;
@@ -305,10 +300,10 @@ fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6 a form:Field ;
     [ a form:ConceptSchemeConstraint ; #TODO
         form:grouping form:Bag ;
         sh:path lblodBesluit:taxType ;
-        form:conceptScheme <http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6>  ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/c93ccd41-aee7-488f-86d3-038de890d05a>  ;
         sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
       ] ;
-    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6"}""" ;
+    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/c93ccd41-aee7-488f-86d3-038de890d05a"}""" ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
@@ -333,7 +328,6 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a a form:Field ;
     form:displayType displayTypes:files;
     sh:group fields:aDynamicPropertyGroup .
 
-# TODO: this is also a highly custom component
 fields:1ee5132e-28c0-4292-9fe6-24c7be456580 a form:Field ;
     mu:uuid "1ee5132e-28c0-4292-9fe6-24c7be456580" ;
     sh:name "Opcentiem" ;
