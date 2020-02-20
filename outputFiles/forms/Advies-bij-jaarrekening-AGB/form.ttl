@@ -2,8 +2,8 @@
 
 ###########Advies-bij-jaarrekening-AGB###########
 
-fieldGroups:a4d22c18-d7c6-48a3-b74e-87979373eee9 a form:FieldGroup ;
-    mu:uuid "a4d22c18-d7c6-48a3-b74e-87979373eee9" ; 
+fieldGroups:418f5932-cd7a-4c85-b9dc-03e21900b8af a form:FieldGroup ;
+    mu:uuid "418f5932-cd7a-4c85-b9dc-03e21900b8af" ; 
     form:hasField 
                       ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
                       fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
@@ -24,10 +24,10 @@ fieldGroups:a4d22c18-d7c6-48a3-b74e-87979373eee9 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:faec18ab-126c-44b7-a78c-3044182693b2.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0bbc26d2-24c8-4868-82d0-b6ce89211f93.
 
-fields:faec18ab-126c-44b7-a78c-3044182693b2 a form:ConditionalFieldGroup ;
-    mu:uuid "faec18ab-126c-44b7-a78c-3044182693b2";
+fields:0bbc26d2-24c8-4868-82d0-b6ce89211f93 a form:ConditionalFieldGroup ;
+    mu:uuid "0bbc26d2-24c8-4868-82d0-b6ce89211f93";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -35,5 +35,5 @@ fields:faec18ab-126c-44b7-a78c-3044182693b2 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/a0a709a7-ac07-4457-8d40-de4aea9b1432>
       ] ;
-    form:hasFieldGroup fieldGroups:a4d22c18-d7c6-48a3-b74e-87979373eee9 .
-    
+    form:hasFieldGroup fieldGroups:418f5932-cd7a-4c85-b9dc-03e21900b8af .
+
