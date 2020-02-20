@@ -2,8 +2,8 @@
 
 ###########Goedkeuringstoezicht-Voeren###########
 
-fieldGroups:ddae17ec-db5e-46b2-b239-9fd143ad0453 a form:FieldGroup ;
-    mu:uuid "ddae17ec-db5e-46b2-b239-9fd143ad0453" ; 
+fieldGroups:1f86efa2-de29-47e5-a5b7-fffb06f58cb2 a form:FieldGroup ;
+    mu:uuid "1f86efa2-de29-47e5-a5b7-fffb06f58cb2" ; 
     form:hasField 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
                       fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
@@ -21,10 +21,10 @@ fieldGroups:ddae17ec-db5e-46b2-b239-9fd143ad0453 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:9829be9c-2a25-4937-85ab-77e5836a1df8.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:3dd1f06d-0a14-44c7-aa9e-70149c728f5b.
 
-fields:9829be9c-2a25-4937-85ab-77e5836a1df8 a form:ConditionalFieldGroup ;
-    mu:uuid "9829be9c-2a25-4937-85ab-77e5836a1df8";
+fields:3dd1f06d-0a14-44c7-aa9e-70149c728f5b a form:ConditionalFieldGroup ;
+    mu:uuid "3dd1f06d-0a14-44c7-aa9e-70149c728f5b";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -32,5 +32,5 @@ fields:9829be9c-2a25-4937-85ab-77e5836a1df8 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/6af621e2-c807-479e-a6f2-2d64d8339491>
       ] ;
-    form:hasFieldGroup fieldGroups:ddae17ec-db5e-46b2-b239-9fd143ad0453 .
+    form:hasFieldGroup fieldGroups:1f86efa2-de29-47e5-a5b7-fffb06f58cb2 .
 
