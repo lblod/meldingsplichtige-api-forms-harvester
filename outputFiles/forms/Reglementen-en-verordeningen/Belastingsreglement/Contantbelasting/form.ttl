@@ -1,0 +1,26 @@
+###########Contantbelasting###########
+
+fieldGroups:35f82f0e-a28a-4e46-836f-5ea8b21bd36a a form:FieldGroup ;
+    mu:uuid "35f82f0e-a28a-4e46-836f-5ea8b21bd36a" ;
+    form:hasField
+                      ###Mar code###
+                      fields:ef31b839-c461-4732-b35c-a8b6c7507cf1,
+
+                      ###Geldt vanaf###
+                      fields:7793c27f-a41b-4665-a876-da9d94075a70,
+
+                      ###Geldt tot####
+                      fields:eeacea67-d327-4952-bbfa-31207823ba87.
+
+fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c form:hasConditionalFieldGroup fields:b9b99ee9-9b29-4b05-b024-79e56c5d52c9.
+
+fields:b9b99ee9-9b29-4b05-b024-79e56c5d52c9 a form:ConditionalFieldGroup ;
+    mu:uuid "b9b99ee9-9b29-4b05-b024-79e56c5d52c9";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6> ;
+        form:customValue <http://lblod.data.gift/concepts/50dcd5efc1a21ccb619bb761eef40e300eed9e6b59eb9cc9d49e9b47bbb57779>
+      ] ;
+    form:hasFieldGroup fieldGroups:35f82f0e-a28a-4e46-836f-5ea8b21bd36a .
