@@ -2,8 +2,8 @@
 
 ###########Wijziging-autonoom-bedrijf###########
 
-fieldGroups:880f8c83-2791-4532-90b1-ab9b695599b2 a form:FieldGroup ;
-    mu:uuid "880f8c83-2791-4532-90b1-ab9b695599b2" ; 
+fieldGroups:fe1bea11-c942-41e3-92c8-fa05711883ce a form:FieldGroup ;
+    mu:uuid "fe1bea11-c942-41e3-92c8-fa05711883ce" ; 
     form:hasField 
                       ###Dossieromschrijving###
                       fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac,
@@ -42,10 +42,10 @@ fieldGroups:880f8c83-2791-4532-90b1-ab9b695599b2 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:11e3e3e0-0b43-4797-924e-77a811814f66.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:204edbfc-d316-431e-87b5-05169a5bf222.
 
-fields:11e3e3e0-0b43-4797-924e-77a811814f66 a form:ConditionalFieldGroup ;
-    mu:uuid "11e3e3e0-0b43-4797-924e-77a811814f66";
+fields:204edbfc-d316-431e-87b5-05169a5bf222 a form:ConditionalFieldGroup ;
+    mu:uuid "204edbfc-d316-431e-87b5-05169a5bf222";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -53,5 +53,5 @@ fields:11e3e3e0-0b43-4797-924e-77a811814f66 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/c945b531-4742-43fe-af55-b13da6ecc6fe>
       ] ;
-    form:hasFieldGroup fieldGroups:880f8c83-2791-4532-90b1-ab9b695599b2 .
+    form:hasFieldGroup fieldGroups:fe1bea11-c942-41e3-92c8-fa05711883ce .
 

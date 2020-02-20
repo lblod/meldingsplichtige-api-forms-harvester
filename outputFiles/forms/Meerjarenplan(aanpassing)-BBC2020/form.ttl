@@ -2,8 +2,8 @@
 
 ###########Meerjarenplan(aanpassing)-BBC2020###########
 
-fieldGroups:ae262959-9612-4c20-bf56-c8a82f3df40e a form:FieldGroup ;
-    mu:uuid "ae262959-9612-4c20-bf56-c8a82f3df40e" ; 
+fieldGroups:1b9920ec-e2c9-4cd5-8841-8f0d29b38f1e a form:FieldGroup ;
+    mu:uuid "1b9920ec-e2c9-4cd5-8841-8f0d29b38f1e" ; 
     form:hasField 
                       ###Datum-van-publicatie-op-webtoepassing###
                       fields:49dbe1be-877a-4890-8465-1510ff18ce18,
@@ -36,10 +36,10 @@ fieldGroups:ae262959-9612-4c20-bf56-c8a82f3df40e a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:2272e1bd-7b30-4fee-ab22-db4987cb97e2.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:f8d73e76-c269-4dc5-88ab-0bac26e4608c.
 
-fields:2272e1bd-7b30-4fee-ab22-db4987cb97e2 a form:ConditionalFieldGroup ;
-    mu:uuid "2272e1bd-7b30-4fee-ab22-db4987cb97e2";
+fields:f8d73e76-c269-4dc5-88ab-0bac26e4608c a form:ConditionalFieldGroup ;
+    mu:uuid "f8d73e76-c269-4dc5-88ab-0bac26e4608c";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -47,5 +47,5 @@ fields:2272e1bd-7b30-4fee-ab22-db4987cb97e2 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/2f189152-1786-4b55-a3a9-d7f06de63f1c>
       ] ;
-    form:hasFieldGroup fieldGroups:ae262959-9612-4c20-bf56-c8a82f3df40e .
+    form:hasFieldGroup fieldGroups:1b9920ec-e2c9-4cd5-8841-8f0d29b38f1e .
 

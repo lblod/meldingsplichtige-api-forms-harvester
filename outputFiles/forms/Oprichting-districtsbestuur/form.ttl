@@ -2,8 +2,8 @@
 
 ###########Oprichting-districtsbestuur###########
 
-fieldGroups:969cac13-d881-44ce-9f67-563bad035383 a form:FieldGroup ;
-    mu:uuid "969cac13-d881-44ce-9f67-563bad035383" ; 
+fieldGroups:7394c826-29d8-4e24-aef3-21b0cd441999 a form:FieldGroup ;
+    mu:uuid "7394c826-29d8-4e24-aef3-21b0cd441999" ; 
     form:hasField 
                       ###Opmerking###
                       fields:0cdfe85f-ec65-498f-bd26-0ec611967de0,
@@ -42,10 +42,10 @@ fieldGroups:969cac13-d881-44ce-9f67-563bad035383 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:49a3d9d8-5ee8-4007-be81-f07dd70ee764.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:33d1b494-87aa-48ef-8a3b-b98aa2e4f9dd.
 
-fields:49a3d9d8-5ee8-4007-be81-f07dd70ee764 a form:ConditionalFieldGroup ;
-    mu:uuid "49a3d9d8-5ee8-4007-be81-f07dd70ee764";
+fields:33d1b494-87aa-48ef-8a3b-b98aa2e4f9dd a form:ConditionalFieldGroup ;
+    mu:uuid "33d1b494-87aa-48ef-8a3b-b98aa2e4f9dd";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -53,5 +53,5 @@ fields:49a3d9d8-5ee8-4007-be81-f07dd70ee764 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/380674ee-0894-4c41-bcc1-9deaeb9d464c>
       ] ;
-    form:hasFieldGroup fieldGroups:969cac13-d881-44ce-9f67-563bad035383 .
+    form:hasFieldGroup fieldGroups:7394c826-29d8-4e24-aef3-21b0cd441999 .
 

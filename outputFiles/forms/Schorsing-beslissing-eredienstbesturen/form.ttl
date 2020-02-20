@@ -2,8 +2,8 @@
 
 ###########Schorsing-beslissing-eredienstbesturen###########
 
-fieldGroups:232cd198-574a-47c2-a78f-e2b9eade35a1 a form:FieldGroup ;
-    mu:uuid "232cd198-574a-47c2-a78f-e2b9eade35a1" ; 
+fieldGroups:bc94c8e9-dbaa-4c78-a336-ddcc3ea13c1b a form:FieldGroup ;
+    mu:uuid "bc94c8e9-dbaa-4c78-a336-ddcc3ea13c1b" ; 
     form:hasField 
                       ###Naam-betreffend-bedrijf/bestuur###
                       fields:78bfbd91-0778-4573-a52d-4c53b3c512eb,
@@ -33,10 +33,10 @@ fieldGroups:232cd198-574a-47c2-a78f-e2b9eade35a1 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:27d5f662-5b40-48ac-b247-73b87ca73f50.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:3ca78683-0c5b-4c98-b034-3d5547ec229d.
 
-fields:27d5f662-5b40-48ac-b247-73b87ca73f50 a form:ConditionalFieldGroup ;
-    mu:uuid "27d5f662-5b40-48ac-b247-73b87ca73f50";
+fields:3ca78683-0c5b-4c98-b034-3d5547ec229d a form:ConditionalFieldGroup ;
+    mu:uuid "3ca78683-0c5b-4c98-b034-3d5547ec229d";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -44,5 +44,5 @@ fields:27d5f662-5b40-48ac-b247-73b87ca73f50 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/b25faa84-3ab5-47ae-98c0-1b389c77b827>
       ] ;
-    form:hasFieldGroup fieldGroups:232cd198-574a-47c2-a78f-e2b9eade35a1 .
+    form:hasFieldGroup fieldGroups:bc94c8e9-dbaa-4c78-a336-ddcc3ea13c1b .
 

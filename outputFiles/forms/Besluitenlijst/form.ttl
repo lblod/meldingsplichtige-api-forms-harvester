@@ -2,8 +2,8 @@
 
 ###########Besluitenlijst###########
 
-fieldGroups:8c30817c-3275-4274-95a2-e746dcc6c371 a form:FieldGroup ;
-    mu:uuid "8c30817c-3275-4274-95a2-e746dcc6c371" ; 
+fieldGroups:cd92bf01-5e97-4728-96fa-df89959a20aa a form:FieldGroup ;
+    mu:uuid "cd92bf01-5e97-4728-96fa-df89959a20aa" ; 
     form:hasField 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
                       fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
@@ -24,10 +24,10 @@ fieldGroups:8c30817c-3275-4274-95a2-e746dcc6c371 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:2699e6ad-34a9-4c78-a2a4-735aafd2d0aa.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d00cb867-1bb9-4b34-b120-94f927f83e6a.
 
-fields:2699e6ad-34a9-4c78-a2a4-735aafd2d0aa a form:ConditionalFieldGroup ;
-    mu:uuid "2699e6ad-34a9-4c78-a2a4-735aafd2d0aa";
+fields:d00cb867-1bb9-4b34-b120-94f927f83e6a a form:ConditionalFieldGroup ;
+    mu:uuid "d00cb867-1bb9-4b34-b120-94f927f83e6a";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -35,5 +35,5 @@ fields:2699e6ad-34a9-4c78-a2a4-735aafd2d0aa a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/3fa67785-ffdc-4b30-8880-2b99d97b4dee>
       ] ;
-    form:hasFieldGroup fieldGroups:8c30817c-3275-4274-95a2-e746dcc6c371 .
+    form:hasFieldGroup fieldGroups:cd92bf01-5e97-4728-96fa-df89959a20aa .
 
