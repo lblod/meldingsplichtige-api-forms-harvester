@@ -5,6 +5,7 @@ To run in a docker container clone this repo then run:
 ```
 docker run -it --rm -v "$PWD":/app -w /app node:10 ./generate-forms.sh
 ```
+Note: this will overwrite folders!
 
 ### concatenating folder structure files in one file
 ```
