@@ -2,8 +2,8 @@
 
 ###########Rechtspositieregeling-(RPR)###########
 
-fieldGroups:a9498500-4b93-438d-9c86-31951ceeecae a form:FieldGroup ;
-    mu:uuid "a9498500-4b93-438d-9c86-31951ceeecae" ; 
+fieldGroups:ed592a90-701b-4ddb-851b-b2711e959b00 a form:FieldGroup ;
+    mu:uuid "ed592a90-701b-4ddb-851b-b2711e959b00" ; 
     form:hasField 
                       ###Datum-zitting/besluit###
                       fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
@@ -24,10 +24,10 @@ fieldGroups:a9498500-4b93-438d-9c86-31951ceeecae a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:edac4b50-b1bb-4758-a0cf-0ffafb304d05.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:2486b1e6-7311-47e3-abad-82ede02e157d.
 
-fields:edac4b50-b1bb-4758-a0cf-0ffafb304d05 a form:ConditionalFieldGroup ;
-    mu:uuid "edac4b50-b1bb-4758-a0cf-0ffafb304d05";
+fields:2486b1e6-7311-47e3-abad-82ede02e157d a form:ConditionalFieldGroup ;
+    mu:uuid "2486b1e6-7311-47e3-abad-82ede02e157d";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -35,5 +35,5 @@ fields:edac4b50-b1bb-4758-a0cf-0ffafb304d05 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/fb21d14b-734b-48f4-bd4e-888163fd08e8>
       ] ;
-    form:hasFieldGroup fieldGroups:a9498500-4b93-438d-9c86-31951ceeecae .
+    form:hasFieldGroup fieldGroups:ed592a90-701b-4ddb-851b-b2711e959b00 .
 

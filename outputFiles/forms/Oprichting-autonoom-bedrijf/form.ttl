@@ -2,8 +2,8 @@
 
 ###########Oprichting-autonoom-bedrijf###########
 
-fieldGroups:f0dbce58-36a1-4940-b4d8-aef411eab7e8 a form:FieldGroup ;
-    mu:uuid "f0dbce58-36a1-4940-b4d8-aef411eab7e8" ; 
+fieldGroups:58a083e5-3a08-46ec-a651-f2d2e6810b49 a form:FieldGroup ;
+    mu:uuid "58a083e5-3a08-46ec-a651-f2d2e6810b49" ; 
     form:hasField 
                       ###Dossieromschrijving###
                       fields:bd6ee5ac-22d6-4279-bcba-3ed279021aac,
@@ -42,10 +42,10 @@ fieldGroups:f0dbce58-36a1-4940-b4d8-aef411eab7e8 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:665b4f5c-52d4-4710-b1b5-ec49ccc7d449.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:ab53e5c7-1731-4856-b38c-b66879bed460.
 
-fields:665b4f5c-52d4-4710-b1b5-ec49ccc7d449 a form:ConditionalFieldGroup ;
-    mu:uuid "665b4f5c-52d4-4710-b1b5-ec49ccc7d449";
+fields:ab53e5c7-1731-4856-b38c-b66879bed460 a form:ConditionalFieldGroup ;
+    mu:uuid "ab53e5c7-1731-4856-b38c-b66879bed460";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -53,5 +53,5 @@ fields:665b4f5c-52d4-4710-b1b5-ec49ccc7d449 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/bd0b0c42-ba5e-4acc-b644-95f6aad904c7>
       ] ;
-    form:hasFieldGroup fieldGroups:f0dbce58-36a1-4940-b4d8-aef411eab7e8 .
+    form:hasFieldGroup fieldGroups:58a083e5-3a08-46ec-a651-f2d2e6810b49 .
 

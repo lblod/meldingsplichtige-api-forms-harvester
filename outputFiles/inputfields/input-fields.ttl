@@ -295,7 +295,7 @@ fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6 a form:Field ;
     mu:uuid "e834ec56-2db3-43d8-8a54-baf6cc0463c6" ;
     sh:name "Type reglement/verordening" ;
     sh:order 3800 ;
-    sh:path rdf:type ;
+    sh:path lblodBesluit:taxType ;
     form:validations
     [ a form:RequiredConstraint ;
         form:grouping form:Bag ;
