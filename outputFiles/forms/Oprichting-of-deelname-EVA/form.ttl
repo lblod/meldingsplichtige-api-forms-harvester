@@ -2,8 +2,8 @@
 
 ###########Oprichting-of-deelname-EVA###########
 
-fieldGroups:4d05c276-213f-48ae-a3ad-454537dbca23 a form:FieldGroup ;
-    mu:uuid "4d05c276-213f-48ae-a3ad-454537dbca23" ; 
+fieldGroups:b8b8aec5-3ace-458d-bbce-1e618a576e17 a form:FieldGroup ;
+    mu:uuid "b8b8aec5-3ace-458d-bbce-1e618a576e17" ; 
     form:hasField 
                       ###Datum-zitting/besluit###
                       fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
@@ -36,10 +36,10 @@ fieldGroups:4d05c276-213f-48ae-a3ad-454537dbca23 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:27818959-4c3b-47b7-9cf4-b78a68cab20d.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:9328cdf4-7fdc-4dc6-b1bc-f6938fe8cc05.
 
-fields:27818959-4c3b-47b7-9cf4-b78a68cab20d a form:ConditionalFieldGroup ;
-    mu:uuid "27818959-4c3b-47b7-9cf4-b78a68cab20d";
+fields:9328cdf4-7fdc-4dc6-b1bc-f6938fe8cc05 a form:ConditionalFieldGroup ;
+    mu:uuid "9328cdf4-7fdc-4dc6-b1bc-f6938fe8cc05";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -47,5 +47,5 @@ fields:27818959-4c3b-47b7-9cf4-b78a68cab20d a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/f8c070bd-96e4-43a1-8c6e-532bcd771251>
       ] ;
-    form:hasFieldGroup fieldGroups:4d05c276-213f-48ae-a3ad-454537dbca23 .
-    
+    form:hasFieldGroup fieldGroups:b8b8aec5-3ace-458d-bbce-1e618a576e17 .
+

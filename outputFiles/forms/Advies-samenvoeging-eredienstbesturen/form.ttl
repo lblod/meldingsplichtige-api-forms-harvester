@@ -2,8 +2,8 @@
 
 ###########Advies-samenvoeging-eredienstbesturen###########
 
-fieldGroups:478c2b54-6906-4b1d-93ef-a6f61256ef5f a form:FieldGroup ;
-    mu:uuid "478c2b54-6906-4b1d-93ef-a6f61256ef5f" ; 
+fieldGroups:6ad91128-de89-400b-b684-6f463ae3d50c a form:FieldGroup ;
+    mu:uuid "6ad91128-de89-400b-b684-6f463ae3d50c" ; 
     form:hasField 
                       ###Datum-zitting/besluit###
                       fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
@@ -21,10 +21,10 @@ fieldGroups:478c2b54-6906-4b1d-93ef-a6f61256ef5f a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:bf099740-380f-4e41-92f5-4f6b3dd746de.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:fbe522ff-4394-4975-9199-ca527bf2df4e.
 
-fields:bf099740-380f-4e41-92f5-4f6b3dd746de a form:ConditionalFieldGroup ;
-    mu:uuid "bf099740-380f-4e41-92f5-4f6b3dd746de";
+fields:fbe522ff-4394-4975-9199-ca527bf2df4e a form:ConditionalFieldGroup ;
+    mu:uuid "fbe522ff-4394-4975-9199-ca527bf2df4e";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -32,5 +32,5 @@ fields:bf099740-380f-4e41-92f5-4f6b3dd746de a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/4efa4632-efc6-40d5-815a-dec785fbceac>
       ] ;
-    form:hasFieldGroup fieldGroups:478c2b54-6906-4b1d-93ef-a6f61256ef5f .
-    
+    form:hasFieldGroup fieldGroups:6ad91128-de89-400b-b684-6f463ae3d50c .
+

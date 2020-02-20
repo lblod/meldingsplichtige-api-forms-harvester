@@ -2,8 +2,8 @@
 
 ###########Besluit-over-meerjarenplan-APB###########
 
-fieldGroups:ae059c98-1e3a-4ad8-8952-440396c8ee43 a form:FieldGroup ;
-    mu:uuid "ae059c98-1e3a-4ad8-8952-440396c8ee43" ; 
+fieldGroups:86fd365b-36ee-4ee9-990a-890b25276bcb a form:FieldGroup ;
+    mu:uuid "86fd365b-36ee-4ee9-990a-890b25276bcb" ; 
     form:hasField 
                       ###Ondernemingsnummer-betreffend-bedrijf/bestuur###
                       fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235,
@@ -36,10 +36,10 @@ fieldGroups:ae059c98-1e3a-4ad8-8952-440396c8ee43 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:ffc0f3f7-9d7a-47f2-a82e-4693e12c4644.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:8243214b-feeb-4ecb-a606-6a2885c03c1d.
 
-fields:ffc0f3f7-9d7a-47f2-a82e-4693e12c4644 a form:ConditionalFieldGroup ;
-    mu:uuid "ffc0f3f7-9d7a-47f2-a82e-4693e12c4644";
+fields:8243214b-feeb-4ecb-a606-6a2885c03c1d a form:ConditionalFieldGroup ;
+    mu:uuid "8243214b-feeb-4ecb-a606-6a2885c03c1d";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
@@ -47,5 +47,5 @@ fields:ffc0f3f7-9d7a-47f2-a82e-4693e12c4644 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/c417f3da-a3bd-47c5-84bf-29007323a362>
       ] ;
-    form:hasFieldGroup fieldGroups:ae059c98-1e3a-4ad8-8952-440396c8ee43 .
-    
+    form:hasFieldGroup fieldGroups:86fd365b-36ee-4ee9-990a-890b25276bcb .
+

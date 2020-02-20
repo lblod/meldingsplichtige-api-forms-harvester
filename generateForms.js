@@ -131,7 +131,7 @@ fields:`+tempuuid+` a form:ConditionalFieldGroup ;
         form:customValue <`+form.formConceptSchemeId+`>
       ] ;
     form:hasFieldGroup fieldGroups:`+form.formId+` .
-    
+
 `;
   
   data+=additionalTriples;
