@@ -5,11 +5,11 @@
 fieldGroups:0945ac20-fec2-4a08-8cb5-ddec808e0c4c a form:FieldGroup ;
     mu:uuid "0945ac20-fec2-4a08-8cb5-ddec808e0c4c" ; 
     form:hasField 
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+                      ###Datum-zitting/agenda###
+                      fields:720c86f8-4537-44b0-850b-fb3452d8bb2d,
 
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+                      ###Datum-zitting/agenda###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,,
 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
                       fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,

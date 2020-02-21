@@ -137,6 +137,23 @@ fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
     mu:uuid "3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb" ;
     sh:name "Datum zitting/besluit" ;
     sh:order 2600 ;
+    sh:path ( [ sh:inversePath besluit:heeftUittreksel ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
+    form:validations
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit is een verplicht veld.";
+        sh:path ( [ sh:inversePath besluit:heeftUittreksel ] prov:startedAtTime ) ],
+      [ a form:ValidDateTime ;
+        form:grouping form:MatchEvery ;
+        sh:path ( [ sh:inversePath besluit:heeftUittreksel ] prov:startedAtTime ) ;
+        sh:resultMessage "Geeft een geldige datum en tijd op."] ;
+    form:displayType displayTypes:dateTime ;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:ba965704-5a74-4a77-b283-4f97f3b7ddbc a form:Field ;
+    mu:uuid "ba965704-5a74-4a77-b283-4f97f3b7ddbc" ;
+    sh:name "Datum zitting/besluitenlijst" ;
+    sh:order 2600 ;
     sh:path ( [ sh:inversePath besluit:heeftBesluitenlijst ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
     form:validations
       [ a form:RequiredConstraint ;
@@ -146,6 +163,40 @@ fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
       [ a form:ValidDateTime ;
         form:grouping form:MatchEvery ;
         sh:path ( [ sh:inversePath besluit:heeftBesluitenlijst ] prov:startedAtTime ) ;
+        sh:resultMessage "Geeft een geldige datum en tijd op."] ;
+    form:displayType displayTypes:dateTime ;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:857d670f-9a25-4555-bfe5-ecc48c2ffde3 a form:Field ;
+    mu:uuid "857d670f-9a25-4555-bfe5-ecc48c2ffde3" ;
+    sh:name "Datum zitting/notulen" ;
+    sh:order 2600 ;
+    sh:path ( [ sh:inversePath besluit:heeftNotulen ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
+    form:validations
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit is een verplicht veld.";
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] prov:startedAtTime ) ],
+      [ a form:ValidDateTime ;
+        form:grouping form:MatchEvery ;
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] prov:startedAtTime ) ;
+        sh:resultMessage "Geeft een geldige datum en tijd op."] ;
+    form:displayType displayTypes:dateTime ;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:720c86f8-4537-44b0-850b-fb3452d8bb2d a form:Field ;
+    mu:uuid "720c86f8-4537-44b0-850b-fb3452d8bb2d" ;
+    sh:name "Datum zitting/agenda" ;
+    sh:order 2600 ;
+    sh:path ( [ sh:inversePath besluit:heeftAgenda ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
+    form:validations
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit is een verplicht veld.";
+        sh:path ( [ sh:inversePath besluit:heeftAgenda ] prov:startedAtTime ) ],
+      [ a form:ValidDateTime ;
+        form:grouping form:MatchEvery ;
+        sh:path ( [ sh:inversePath besluit:heeftAgenda ] prov:startedAtTime ) ;
         sh:resultMessage "Geeft een geldige datum en tijd op."] ;
     form:displayType displayTypes:dateTime ;
     sh:group fields:aDynamicPropertyGroup .

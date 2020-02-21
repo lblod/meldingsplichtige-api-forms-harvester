@@ -5,14 +5,14 @@
 fieldGroups:2fb408e5-b38a-43fc-8ebe-7c38381312df a form:FieldGroup ;
     mu:uuid "2fb408e5-b38a-43fc-8ebe-7c38381312df" ; 
     form:hasField 
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+                      ###Datum-zitting/notulen###
+                      fields:857d670f-9a25-4555-bfe5-ecc48c2ffde3
 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
                       fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
 
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+                      ###Datum-zitting/notulen###
+                      fields:857d670f-9a25-4555-bfe5-ecc48c2ffde3
 
                       ###Links-naar-documenten###
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
