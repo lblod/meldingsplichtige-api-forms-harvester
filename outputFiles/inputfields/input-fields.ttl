@@ -153,7 +153,7 @@ fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
 fields:ef31b839-c461-4732-b35c-a8b6c7507cf1 a form:Field ;
     mu:uuid "ef31b839-c461-4732-b35c-a8b6c7507cf1" ;
     sh:name "MAR-code" ;
-    sh:order 3100 ;
+    sh:order 5100 ;
     sh:path lblodBesluit:chartOfAccount ;
     form:validations
       [ a form:ConceptSchemeConstraint ; #TODO
@@ -169,7 +169,7 @@ fields:ef31b839-c461-4732-b35c-a8b6c7507cf1 a form:Field ;
 fields:a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d a form:Field ;
     mu:uuid "a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d" ;
     sh:name "MAR-code" ;
-    sh:order 3101 ;
+    sh:order 5100 ;
     sh:path lblodBesluit:chartOfAccount ;
     form:validations
       [ a form:RequiredConstraint ;
@@ -189,7 +189,7 @@ fields:a1b6c2e1-c1c3-45fb-84e7-cdd241a3130d a form:Field ;
 fields:7793c27f-a41b-4665-a876-da9d94075a70 a form:Field ;
     mu:uuid "7793c27f-a41b-4665-a876-da9d94075a70" ;
     sh:name "Geldt vanaf" ;
-    sh:order 3200 ;
+    sh:order 5101 ;
     sh:path eli:first_date_entry_in_force ;
     form:validations
       [ a form:ValidDate ;
@@ -202,7 +202,7 @@ fields:7793c27f-a41b-4665-a876-da9d94075a70 a form:Field ;
 fields:4b32c8fb-9725-4f9f-9872-b04198732483 a form:Field ;
     mu:uuid "4b32c8fb-9725-4f9f-9872-b04198732483" ;
     sh:name "Geldt vanaf" ;
-    sh:order 3201 ;
+    sh:order 5101 ;
     sh:path eli:first_date_entry_in_force ;
     form:validations
       [ a form:RequiredConstraint ;
@@ -220,7 +220,7 @@ fields:4b32c8fb-9725-4f9f-9872-b04198732483 a form:Field ;
 fields:eeacea67-d327-4952-bbfa-31207823ba87 a form:Field ;
     mu:uuid "eeacea67-d327-4952-bbfa-31207823ba87" ;
     sh:name "Geldt tot" ;
-    sh:order 3300 ;
+    sh:order 5102 ;
     sh:path eli:date_no_longer_in_force ;
     form:validations
       [ a form:ValidDate ;
@@ -233,7 +233,7 @@ fields:eeacea67-d327-4952-bbfa-31207823ba87 a form:Field ;
 fields:3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44 a form:Field ;
     mu:uuid "3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44" ;
     sh:name "Geldt tot" ;
-    sh:order 3301 ;
+    sh:order 5102 ;
     sh:path eli:date_no_longer_in_force ;
     form:validations
       [ a form:RequiredConstraint ;
@@ -251,7 +251,7 @@ fields:3a9f6f7d-2952-4128-84cc-bc8dc3d1ee44 a form:Field ;
 fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c a form:Field ;
     mu:uuid "7cd14dfd-81ff-4a5d-8374-5879c5877c4c" ;
     sh:name "Soort Belasting" ;
-    sh:order 3400 ;
+    sh:order 5000 ;
     sh:path lblodBesluit:taxType ;
     form:validations
     [ a form:RequiredConstraint ;
@@ -290,16 +290,16 @@ fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6 a form:Field ;
     mu:uuid "e834ec56-2db3-43d8-8a54-baf6cc0463c6" ;
     sh:name "Type reglement/verordening" ;
     sh:order 3800 ;
-    sh:path lblodBesluit:taxType ;
+    sh:path rdf:type ;
     form:validations
     [ a form:RequiredConstraint ;
         form:grouping form:Bag ;
-        sh:path lblodBesluit:taxType ;
+        sh:path rdf:type ;
         sh:resultMessage "Dit veld is verplicht."@nl
     ],
     [ a form:ConceptSchemeConstraint ; #TODO
         form:grouping form:Bag ;
-        sh:path lblodBesluit:taxType ;
+        sh:path rdf:type ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/c93ccd41-aee7-488f-86d3-038de890d05a>  ;
         sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
       ] ;
@@ -310,7 +310,7 @@ fields:e834ec56-2db3-43d8-8a54-baf6cc0463c6 a form:Field ;
 fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b a form:Field ;
     mu:uuid "c955d641-b9b3-4ec7-9838-c2a477c7e95b" ;
     sh:name "Links naar documenten" ;
-    sh:order 3900 ;
+    sh:order 10000 ;
     sh:path prov:atLocation ;
     form:validations
      [ a form:UriConstraint ;
@@ -323,7 +323,7 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b a form:Field ;
 fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a a form:Field ;
     mu:uuid "c955d641-b9b3-4ec7-9838-c2a477c7e95a" ;
     sh:name "Bestanden" ;
-    sh:order 3900 ;
+    sh:order 10001 ;
     sh:path nfo:FileDataObject ;
     form:displayType displayTypes:files;
     sh:group fields:aDynamicPropertyGroup .
@@ -331,7 +331,7 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a a form:Field ;
 fields:1ee5132e-28c0-4292-9fe6-24c7be456580 a form:Field ;
     mu:uuid "1ee5132e-28c0-4292-9fe6-24c7be456580" ;
     sh:name "Opcentiem" ;
-    sh:order 3502 ;
+    sh:order 5001 ;
     sh:path lblodBesluit:taxRate ;
     #form:validations [];
     form:displayType displayTypes:vLabelOpcentiem ;

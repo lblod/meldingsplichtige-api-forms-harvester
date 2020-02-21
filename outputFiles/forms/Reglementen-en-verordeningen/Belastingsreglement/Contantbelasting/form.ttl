@@ -19,7 +19,7 @@ fields:b9b99ee9-9b29-4b05-b024-79e56c5d52c9 a form:ConditionalFieldGroup ;
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
-        sh:path rdf:type ;
+        sh:path lblodBesluit:taxType ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6> ;
         form:customValue <http://lblod.data.gift/concepts/50dcd5efc1a21ccb619bb761eef40e300eed9e6b59eb9cc9d49e9b47bbb57779>
       ] ;
