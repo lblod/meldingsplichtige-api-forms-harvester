@@ -11,9 +11,6 @@ fieldGroups:64b712f3-c061-4368-919e-6ea6afb45192 a form:FieldGroup ;
                       ###Datum-zitting/besluitenlijst###
                       fields:ba965704-5a74-4a77-b283-4f97f3b7ddbc,
 
-                      ###Datum-zitting/besluitenlijst###
-                      fields:ba965704-5a74-4a77-b283-4f97f3b7ddbc,
-
                       ###Datum-van-publicatie-op-webtoepassing###
                       fields:49dbe1be-877a-4890-8465-1510ff18ce18,
 

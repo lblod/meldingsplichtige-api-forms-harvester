@@ -137,6 +137,23 @@ fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
     mu:uuid "3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb" ;
     sh:name "Datum zitting/besluit" ;
     sh:order 2600 ;
+    sh:path ( [ sh:inversePath besluit:heeftUittreksel ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
+    form:validations
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit is een verplicht veld.";
+        sh:path ( [ sh:inversePath besluit:heeftUittreksel ] prov:startedAtTime ) ],
+      [ a form:ValidDateTime ;
+        form:grouping form:MatchEvery ;
+        sh:path ( [ sh:inversePath besluit:heeftUittreksel ] prov:startedAtTime ) ;
+        sh:resultMessage "Geeft een geldige datum en tijd op."] ;
+    form:displayType displayTypes:dateTime ;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:ba965704-5a74-4a77-b283-4f97f3b7ddbc a form:Field ;
+    mu:uuid "ba965704-5a74-4a77-b283-4f97f3b7ddbc" ;
+    sh:name "Datum zitting/besluitenlijst" ;
+    sh:order 2600 ;
     sh:path ( [ sh:inversePath besluit:heeftBesluitenlijst ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
     form:validations
       [ a form:RequiredConstraint ;
@@ -146,6 +163,40 @@ fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
       [ a form:ValidDateTime ;
         form:grouping form:MatchEvery ;
         sh:path ( [ sh:inversePath besluit:heeftBesluitenlijst ] prov:startedAtTime ) ;
+        sh:resultMessage "Geeft een geldige datum en tijd op."] ;
+    form:displayType displayTypes:dateTime ;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:857d670f-9a25-4555-bfe5-ecc48c2ffde3 a form:Field ;
+    mu:uuid "857d670f-9a25-4555-bfe5-ecc48c2ffde3" ;
+    sh:name "Datum zitting/notulen" ;
+    sh:order 2600 ;
+    sh:path ( [ sh:inversePath besluit:heeftNotulen ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
+    form:validations
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit is een verplicht veld.";
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] prov:startedAtTime ) ],
+      [ a form:ValidDateTime ;
+        form:grouping form:MatchEvery ;
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] prov:startedAtTime ) ;
+        sh:resultMessage "Geeft een geldige datum en tijd op."] ;
+    form:displayType displayTypes:dateTime ;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:720c86f8-4537-44b0-850b-fb3452d8bb2d a form:Field ;
+    mu:uuid "720c86f8-4537-44b0-850b-fb3452d8bb2d" ;
+    sh:name "Datum zitting/agenda" ;
+    sh:order 2600 ;
+    sh:path ( [ sh:inversePath besluit:heeftAgenda ] prov:startedAtTime ) ;  # see https://www.w3.org/TR/shacl/#property-paths for syntax
+    form:validations
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit is een verplicht veld.";
+        sh:path ( [ sh:inversePath besluit:heeftAgenda ] prov:startedAtTime ) ],
+      [ a form:ValidDateTime ;
+        form:grouping form:MatchEvery ;
+        sh:path ( [ sh:inversePath besluit:heeftAgenda ] prov:startedAtTime ) ;
         sh:resultMessage "Geeft een geldige datum en tijd op."] ;
     form:displayType displayTypes:dateTime ;
     sh:group fields:aDynamicPropertyGroup .
@@ -557,18 +608,13 @@ fields:c2331741-8d43-4fcd-8aae-c2d102e714ff a form:ConditionalFieldGroup ;
       ] ;
     form:hasFieldGroup fieldGroups:53505d5d-d28c-49d2-afaf-910f673d34e1 .
 
-
-
 ###########Agenda###########
 
 fieldGroups:0945ac20-fec2-4a08-8cb5-ddec808e0c4c a form:FieldGroup ;
-    mu:uuid "0945ac20-fec2-4a08-8cb5-ddec808e0c4c" ; 
-    form:hasField 
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
-
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+    mu:uuid "0945ac20-fec2-4a08-8cb5-ddec808e0c4c" ;
+    form:hasField
+                      ###Datum-zitting/agenda###
+                      fields:720c86f8-4537-44b0-850b-fb3452d8bb2d,
 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
                       fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
@@ -592,7 +638,6 @@ fields:e14b7ae5-f527-4fb8-b1b8-84779bac960b a form:ConditionalFieldGroup ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/13fefad6-a9d6-4025-83b5-e4cbee3a8965>
       ] ;
     form:hasFieldGroup fieldGroups:0945ac20-fec2-4a08-8cb5-ddec808e0c4c .
-
 
 
 ###########Andere-documenten-BBC###########
@@ -984,11 +1029,8 @@ fieldGroups:64b712f3-c061-4368-919e-6ea6afb45192 a form:FieldGroup ;
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
                       fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
 
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
-
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+                      ###Datum-zitting/besluitenlijst###
+                      fields:ba965704-5a74-4a77-b283-4f97f3b7ddbc,
 
                       ###Datum-van-publicatie-op-webtoepassing###
                       fields:49dbe1be-877a-4890-8465-1510ff18ce18,
@@ -1254,14 +1296,11 @@ fields:66d433ec-7022-420b-8bf8-e718a8ecb795 a form:ConditionalFieldGroup ;
 fieldGroups:2fb408e5-b38a-43fc-8ebe-7c38381312df a form:FieldGroup ;
     mu:uuid "2fb408e5-b38a-43fc-8ebe-7c38381312df" ; 
     form:hasField 
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+                      ###Datum-zitting/notulen###
+                      fields:857d670f-9a25-4555-bfe5-ecc48c2ffde3,
 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
                       fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
-
-                      ###Datum-zitting/besluit###
-                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
                       ###Links-naar-documenten###
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
