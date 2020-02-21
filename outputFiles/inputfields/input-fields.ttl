@@ -18,7 +18,7 @@
 @prefix elod: <http://linkedeconomy.org/ontology#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
-
+@prefix nie: <http://www.semanticdesktop.org/ontologies/2007/01/19/nie#>.
 # conditional fields are dynamic
 # TODO: fix groups (probably) too
 
@@ -311,12 +311,12 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b a form:Field ;
     mu:uuid "c955d641-b9b3-4ec7-9838-c2a477c7e95b" ;
     sh:name "Links naar documenten" ;
     sh:order 10000 ;
-    sh:path prov:atLocation ;
+    sh:path ( dct:hasPart nie:url ) ;
     form:validations
      [ a form:UriConstraint ;
         form:grouping form:MatchEvery ;
         sh:resultMessage "Gelieve een geldige URL op te geven.";
-         sh:path prov:atLocation ];
+         sh:path ( dct:hasPart nie:url ) ];
     form:displayType displayTypes:remoteUrls;
     sh:group fields:aDynamicPropertyGroup .
 
