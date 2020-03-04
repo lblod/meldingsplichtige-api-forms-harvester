@@ -6,6 +6,12 @@ fieldGroups:ea903e93-a1c9-4542-ab11-8a274af5ee1c a form:FieldGroup ;
                       ###Soort Belasting###
                       fields:7cd14dfd-81ff-4a5d-8374-5879c5877c4c,
 
+                      ###Differentiatie###
+                      fields:f3c1f62e-0fc6-4440-8208-7a0ef49fb28c,
+
+                      ###TaxRate Type###
+                      fields:eaf71eec-6ca8-4f63-b4a6-adfe4f21651b,
+
                       ###Vlabel opcentiem###
                       fields:1ee5132e-28c0-4292-9fe6-24c7be456580.
 
