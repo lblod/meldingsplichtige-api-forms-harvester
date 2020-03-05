@@ -30,9 +30,11 @@ fieldGroups:319fc495-408d-4b3d-b217-dcbdf6f414d5 a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
 
                       ###Bestanden###
-                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
 
-
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874.
+                      
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d99c663e-32ae-4865-bdeb-f961fda68d61.
 
 fields:d99c663e-32ae-4865-bdeb-f961fda68d61 a form:ConditionalFieldGroup ;
