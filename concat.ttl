@@ -772,6 +772,44 @@ fields:17b66f1d-eb1f-4014-af8f-fe436e149662 a form:ConditionalFieldGroup ;
 
 
 
+###########Authentieke akte van de statuten###########
+
+fieldGroups:c059770c-decd-49aa-abbe-82b29a286225 a form:FieldGroup ;
+    mu:uuid "c059770c-decd-49aa-abbe-82b29a286225" ;
+    form:hasField
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Datum-zitting/besluitenlijst###
+                      fields:ba965704-5a74-4a77-b283-4f97f3b7ddbc,
+
+                      ###Datum-van-publicatie-op-webtoepassing###
+                      fields:49dbe1be-877a-4890-8465-1510ff18ce18,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:c259ff82-08d7-4009-81db-28456c9f6e21 .
+
+fields:c259ff82-08d7-4009-81db-28456c9f6e21 a form:ConditionalFieldGroup ;
+    mu:uuid "c259ff82-08d7-4009-81db-28456c9f6e21";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/bf72e38a-2c73-4484-b82f-c642a4c39d0c>
+      ] ;
+    form:hasFieldGroup fieldGroups:c059770c-decd-49aa-abbe-82b29a286225 .
+
+
+
 ###########Besluit-budget-AGB###########
 
 fieldGroups:0cb3ea99-0555-4529-a367-0a76de0fc448 a form:FieldGroup ;
