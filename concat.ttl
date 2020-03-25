@@ -1876,7 +1876,7 @@ fields:0c7d6a0d-146e-40bf-b834-12941feac885 a form:ConditionalFieldGroup ;
         form:grouping form:Bag ;
         sh:path lblodBesluit:taxType ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/3037c4f4-1c63-43ac-bfc4-b41d098b15a6> ;
-        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/efa4ec5a-b006-453f-985f-f986ebae11bc>
+        form:customValue <http://lblod.data.gift/concepts/332f06e0ac5a934407648281bf2564c8bc796bdb9c5e79ab6d928d0788770d4e>
       ] ;
     form:hasFieldGroup fieldGroups:577dcadb-89fb-4365-af2c-93a61c1b9264 .###########Belastingsreglement###########
 
