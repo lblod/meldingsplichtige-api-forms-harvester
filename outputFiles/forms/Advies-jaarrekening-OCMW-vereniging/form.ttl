@@ -24,7 +24,10 @@ fieldGroups:e5d8713c-338a-4775-a745-f6f4bad7189e a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
 
                       ###Type RemoteDataObject or FileDataObject###
-                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874.
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
 
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:22646d67-09ad-49ab-8f09-e9948c18cbec.
 

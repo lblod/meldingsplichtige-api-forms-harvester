@@ -386,9 +386,6 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b a form:Field ;
     form:displayType displayTypes:remoteUrls;
     sh:group fields:aDynamicPropertyGroup .
 
-#TODO: it seems backend validation of url is ignored.
-# The url value should be included in an hidden input AND the frontend-component logic would need
-# a small update.
 fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a a form:Field ;
     mu:uuid "c955d641-b9b3-4ec7-9838-c2a477c7e95a" ;
     sh:name "Bestanden" ;
@@ -409,6 +406,19 @@ fields:355fe001-cdca-48cc-8a6e-88b3aab09874 a form:Field ;
     sh:order 10001 ;
     sh:path ( dct:hasPart rdf:type );
     sh:group fields:aDynamicPropertyGroup .
+
+fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db a form:Field ;
+    mu:uuid "d0052f0d-90bc-4543-a6b0-e90a1c1117db" ;
+    sh:name "RemoteDataObject/url [hidden input]" ;
+    sh:order 10001 ;
+    sh:path ( dct:hasPart nie:url );
+    form:validations
+     [ a form:UriConstraint ;
+        form:grouping form:MatchEvery ;
+        sh:resultMessage "Gelieve een geldige URL op te geven."; # TODO: later custom validator
+        sh:path ( dct:hasPart nie:url )
+     ];
+     sh:group fields:aDynamicPropertyGroup .
 ##########################################################
 #  Files and links  [First version]
 ##########################################################
