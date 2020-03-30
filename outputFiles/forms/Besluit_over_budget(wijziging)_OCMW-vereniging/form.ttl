@@ -1,7 +1,7 @@
-###########Besluit financieel document eredienstbestuur###########
+########### budget wijziging ocmw-vereniging ###########
 
-fieldGroups:36679664-25b5-4e2d-8a58-585e00d595e1 a form:FieldGroup ;
-    mu:uuid "36679664-25b5-4e2d-8a58-585e00d595e1" ;
+fieldGroups:fbdc9d22-bd48-42b9-95ca-e96d0af7f2bf a form:FieldGroup ;
+    mu:uuid "fbdc9d22-bd48-42b9-95ca-e96d0af7f2bf" ;
     form:hasField
                       ###Datum-zitting/besluit###
                       fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
@@ -21,15 +21,15 @@ fieldGroups:36679664-25b5-4e2d-8a58-585e00d595e1 a form:FieldGroup ;
                       ### RemoteDataObject/url ###
                       fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
 
-fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:e2921d43-804b-43b7-b4d2-c0cf8faffb32.
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:2c0c9e5a-4205-45a9-9f63-6d19af345e81.
 
-fields:e2921d43-804b-43b7-b4d2-c0cf8faffb32 a form:ConditionalFieldGroup ;
-    mu:uuid "e2921d43-804b-43b7-b4d2-c0cf8faffb32";
+fields:2c0c9e5a-4205-45a9-9f63-6d19af345e81 a form:ConditionalFieldGroup ;
+    mu:uuid "2c0c9e5a-4205-45a9-9f63-6d19af345e81";
     form:conditions
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
-        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/98dcd0be-b0c4-4051-a931-f837140bbe93>
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/70ae4d36-de0c-425d-9dbe-3b6deef8343c>
       ] ;
-    form:hasFieldGroup fieldGroups:36679664-25b5-4e2d-8a58-585e00d595e1 .
+    form:hasFieldGroup fieldGroups:fbdc9d22-bd48-42b9-95ca-e96d0af7f2bf .

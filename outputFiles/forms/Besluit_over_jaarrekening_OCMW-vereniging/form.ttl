@@ -30,6 +30,6 @@ fields:75b8fb8c-f1b5-4a50-adc4-b0d4634b5a67 a form:ConditionalFieldGroup ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
         form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
-        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/1fdd091b-a5ac-4f00-b19f-9186f05a32f6>
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/8b5ff213-1866-4d4c-8d67-af0cdc1acf33>
       ] ;
     form:hasFieldGroup fieldGroups:f451f1ae-ea1f-4457-8116-2220df77b44d .
