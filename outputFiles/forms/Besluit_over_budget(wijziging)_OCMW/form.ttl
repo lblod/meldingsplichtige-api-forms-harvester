@@ -1,0 +1,35 @@
+########### budget wijziging ocmw ###########
+
+fieldGroups:9991d11c-e83b-45db-baad-68ad1147cef0 a form:FieldGroup ;
+    mu:uuid "9991d11c-e83b-45db-baad-68ad1147cef0" ;
+    form:hasField
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:e40c78e9-5942-42e5-ae32-2357fadad288.
+
+fields:e40c78e9-5942-42e5-ae32-2357fadad288 a form:ConditionalFieldGroup ;
+    mu:uuid "e40c78e9-5942-42e5-ae32-2357fadad288";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <https://data.vlaanderen.be/id/concept/BesluitType/3f9919e0-868e-4f83-a3d3-300df65022ab> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773>
+      ] ;
+    form:hasFieldGroup fieldGroups:9991d11c-e83b-45db-baad-68ad1147cef0 .
