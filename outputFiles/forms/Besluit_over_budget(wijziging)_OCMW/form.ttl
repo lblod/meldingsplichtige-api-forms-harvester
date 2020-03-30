@@ -29,7 +29,7 @@ fields:e40c78e9-5942-42e5-ae32-2357fadad288 a form:ConditionalFieldGroup ;
       [ a form:SingleCodelistValue ;
         form:grouping form:Bag ;
         sh:path rdf:type ;
-        form:conceptScheme <https://data.vlaanderen.be/id/concept/BesluitType/3f9919e0-868e-4f83-a3d3-300df65022ab> ;
-        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773>
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/3f9919e0-868e-4f83-a3d3-300df65022ab>
       ] ;
     form:hasFieldGroup fieldGroups:9991d11c-e83b-45db-baad-68ad1147cef0 .
