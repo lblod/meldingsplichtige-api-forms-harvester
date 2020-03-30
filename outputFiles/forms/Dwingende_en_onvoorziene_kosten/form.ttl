@@ -1,0 +1,35 @@
+###########Onvoorziene kosten###########
+
+fieldGroups:9f364ec1-bb5f-4b7d-9dea-b0341bc5d5bc a form:FieldGroup ;
+    mu:uuid "9f364ec1-bb5f-4b7d-9dea-b0341bc5d5bc" ;
+    form:hasField
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0dd4d0db-db4d-4e9a-8588-ea2082b65746.
+
+fields:0dd4d0db-db4d-4e9a-8588-ea2082b65746 a form:ConditionalFieldGroup ;
+    mu:uuid "0dd4d0db-db4d-4e9a-8588-ea2082b65746";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/52ce88b7-5608-4844-997d-d3a92d8cca69>
+      ] ;
+    form:hasFieldGroup fieldGroups:9f364ec1-bb5f-4b7d-9dea-b0341bc5d5bc .
