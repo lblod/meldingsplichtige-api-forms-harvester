@@ -1,0 +1,35 @@
+###########Overruling visum###########
+
+fieldGroups:58b112ad-98af-450f-8c67-01416cc2cebb a form:FieldGroup ;
+    mu:uuid "58b112ad-98af-450f-8c67-01416cc2cebb" ;
+    form:hasField
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:8e149ca6-75e6-4b73-9744-31eae25ba10d.
+
+fields:8e149ca6-75e6-4b73-9744-31eae25ba10d a form:ConditionalFieldGroup ;
+    mu:uuid "8e149ca6-75e6-4b73-9744-31eae25ba10d";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/ceaa6eec-504d-496f-afbc-cfac6aafa154>
+      ] ;
+    form:hasFieldGroup fieldGroups:58b112ad-98af-450f-8c67-01416cc2cebb .
