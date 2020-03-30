@@ -1,0 +1,35 @@
+###########Jaarrekening OCMWv###########
+
+fieldGroups:f451f1ae-ea1f-4457-8116-2220df77b44d a form:FieldGroup ;
+    mu:uuid "f451f1ae-ea1f-4457-8116-2220df77b44d" ;
+    form:hasField
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:75b8fb8c-f1b5-4a50-adc4-b0d4634b5a67.
+
+fields:75b8fb8c-f1b5-4a50-adc4-b0d4634b5a67 a form:ConditionalFieldGroup ;
+    mu:uuid "75b8fb8c-f1b5-4a50-adc4-b0d4634b5a67";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/1fdd091b-a5ac-4f00-b19f-9186f05a32f6>
+      ] ;
+    form:hasFieldGroup fieldGroups:f451f1ae-ea1f-4457-8116-2220df77b44d .
