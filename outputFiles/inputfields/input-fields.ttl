@@ -376,7 +376,7 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b a form:Field ;
     form:validations
      [ a form:UriConstraint ;
         form:grouping form:MatchEvery ;
-        sh:resultMessage "Gelieve een geldige URL op te geven."; # TODO: later custom validator
+        sh:resultMessage "Gelieve een geldige URL op te geven. Zorg dat vooraan in de link altijd http://, https://, ftp:// of sftp:// staat."; # TODO: later custom validator
          sh:path ( dct:hasPart nie:url ) ],
      [ a form:RequiredConstraint ;
          form:grouping form:Bag ;
@@ -415,7 +415,7 @@ fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db a form:Field ;
     form:validations
      [ a form:UriConstraint ;
         form:grouping form:MatchEvery ;
-        sh:resultMessage "Gelieve een geldige URL op te geven."; # TODO: later custom validator
+        sh:resultMessage "Gelieve een geldige URL op te geven. Zorg dat vooraan in de link altijd http://, https://, ftp:// of sftp:// staat."; # TODO: later custom validator
         sh:path ( dct:hasPart nie:url )
      ];
      sh:group fields:aDynamicPropertyGroup .
