@@ -140,6 +140,28 @@ fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d a form:Field ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
+# For notulen, we want another path that is semantically correct
+fields:e24d533f-3e63-4b36-a6af-21c65357e258 a form:Field ;
+    mu:uuid "e24d533f-3e63-4b36-a6af-21c65357e258" ;
+    sh:name "Welk beslissingsorgaan nam het besluit?" ;
+    sh:order 2000 ;
+    sh:path ( [ sh:inversePath besluit:heeftNotulen ] besluit:isGehoudenDoor ) ;
+    form:validations
+      [ a form:ConceptSchemeConstraint ; #TODO
+        form:grouping form:Bag ;
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] besluit:isGehoudenDoor ) ;
+        form:conceptScheme <http://data.lblod.info/concept-schemes/481c03f0-d07f-424e-9c2b-8d4cfb141c72> ;
+        sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
+      ],
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit veld is verplicht."@nl;
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] besluit:isGehoudenDoor )
+      ] ;
+    form:options  """{"conceptScheme":"http://data.lblod.info/concept-schemes/481c03f0-d07f-424e-9c2b-8d4cfb141c72"}""" ;
+    form:displayType displayTypes:conceptSchemeSelector ;
+    sh:group fields:aDynamicPropertyGroup .
+
 fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
     mu:uuid "3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb" ;
     sh:name "Datum zitting/besluit" ;
@@ -1905,18 +1927,16 @@ fields:205c1db4-f132-4e82-b707-48f703ac0d86 a form:ConditionalFieldGroup ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitType/a7ea5d04-9af6-4b38-af5c-303756c34e42>
       ] ;
     form:hasFieldGroup fieldGroups:5f0ae173-ef30-445a-8411-5eee51fe1910 .
-
-
 ###########Notulen###########
 
 fieldGroups:2fb408e5-b38a-43fc-8ebe-7c38381312df a form:FieldGroup ;
-    mu:uuid "2fb408e5-b38a-43fc-8ebe-7c38381312df" ; 
-    form:hasField 
+    mu:uuid "2fb408e5-b38a-43fc-8ebe-7c38381312df" ;
+    form:hasField
                       ###Datum-zitting/notulen###
                       fields:857d670f-9a25-4555-bfe5-ecc48c2ffde3,
 
-                      ###Welk-beslissingsorgaan-nam-het-besluit?###
-                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+                      ###Welk-beslissingsorgaan-nam-het-besluit? (Version for notulen) ###
+                      fields:e24d533f-3e63-4b36-a6af-21c65357e258,
 
                       ###Links-naar-documenten###
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
@@ -1942,7 +1962,6 @@ fields:d441cb26-ea24-4ff7-b5fb-868e36e7d468 a form:ConditionalFieldGroup ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773>
       ] ;
     form:hasFieldGroup fieldGroups:2fb408e5-b38a-43fc-8ebe-7c38381312df .
-
 
 
 ###########Oprichting-IGS###########

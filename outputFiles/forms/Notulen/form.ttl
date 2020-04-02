@@ -1,15 +1,13 @@
-
-
 ###########Notulen###########
 
 fieldGroups:2fb408e5-b38a-43fc-8ebe-7c38381312df a form:FieldGroup ;
-    mu:uuid "2fb408e5-b38a-43fc-8ebe-7c38381312df" ; 
-    form:hasField 
+    mu:uuid "2fb408e5-b38a-43fc-8ebe-7c38381312df" ;
+    form:hasField
                       ###Datum-zitting/notulen###
                       fields:857d670f-9a25-4555-bfe5-ecc48c2ffde3,
 
-                      ###Welk-beslissingsorgaan-nam-het-besluit?###
-                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+                      ###Welk-beslissingsorgaan-nam-het-besluit? (Version for notulen) ###
+                      fields:e24d533f-3e63-4b36-a6af-21c65357e258,
 
                       ###Links-naar-documenten###
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
@@ -35,4 +33,3 @@ fields:d441cb26-ea24-4ff7-b5fb-868e36e7d468 a form:ConditionalFieldGroup ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/8e791b27-7600-4577-b24e-c7c29e0eb773>
       ] ;
     form:hasFieldGroup fieldGroups:2fb408e5-b38a-43fc-8ebe-7c38381312df .
-

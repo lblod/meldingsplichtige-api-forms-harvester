@@ -140,6 +140,28 @@ fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d a form:Field ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
+# For notulen, we want another path that is semantically correct
+fields:e24d533f-3e63-4b36-a6af-21c65357e258 a form:Field ;
+    mu:uuid "e24d533f-3e63-4b36-a6af-21c65357e258" ;
+    sh:name "Welk beslissingsorgaan nam het besluit?" ;
+    sh:order 2000 ;
+    sh:path ( [ sh:inversePath besluit:heeftNotulen ] besluit:isGehoudenDoor ) ;
+    form:validations
+      [ a form:ConceptSchemeConstraint ; #TODO
+        form:grouping form:Bag ;
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] besluit:isGehoudenDoor ) ;
+        form:conceptScheme <http://data.lblod.info/concept-schemes/481c03f0-d07f-424e-9c2b-8d4cfb141c72> ;
+        sh:resultMessage "De waarde komt niet uit de opgegeven codelijst."@nl
+      ],
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit veld is verplicht."@nl;
+        sh:path ( [ sh:inversePath besluit:heeftNotulen ] besluit:isGehoudenDoor )
+      ] ;
+    form:options  """{"conceptScheme":"http://data.lblod.info/concept-schemes/481c03f0-d07f-424e-9c2b-8d4cfb141c72"}""" ;
+    form:displayType displayTypes:conceptSchemeSelector ;
+    sh:group fields:aDynamicPropertyGroup .
+
 fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
     mu:uuid "3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb" ;
     sh:name "Datum zitting/besluit" ;
