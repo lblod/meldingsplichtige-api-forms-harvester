@@ -1,12 +1,10 @@
-
-
 ###########Besluitenlijst###########
 
 fieldGroups:64b712f3-c061-4368-919e-6ea6afb45192 a form:FieldGroup ;
     mu:uuid "64b712f3-c061-4368-919e-6ea6afb45192" ; 
     form:hasField 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
-                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+                      fields:4c7820f0-4011-4ab4-a16a-e128800e11bc,
 
                       ###Datum-zitting/besluitenlijst###
                       fields:ba965704-5a74-4a77-b283-4f97f3b7ddbc,
@@ -14,17 +12,14 @@ fieldGroups:64b712f3-c061-4368-919e-6ea6afb45192 a form:FieldGroup ;
                       ###Datum-van-publicatie-op-webtoepassing###
                       fields:49dbe1be-877a-4890-8465-1510ff18ce18,
 
-                      ###Links-naar-documenten###
-                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
-
-                      ###Bestanden###
-                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
-
                       ###Type RemoteDataObject or FileDataObject###
                       fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
 
                       ### RemoteDataObject/url ###
-                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db,
+
+                      ### Bestuursorgaan classificatie code [hidden input] ###
+                      fields:303545a6-705b-43b3-86b7-b96436524be9.
 
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d75438e8-a4c5-4b39-a606-e198fdeb7aec.
 

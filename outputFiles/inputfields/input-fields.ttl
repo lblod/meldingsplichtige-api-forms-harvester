@@ -162,6 +162,34 @@ fields:e24d533f-3e63-4b36-a6af-21c65357e258 a form:Field ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
+# custom bestuursorgaan-selector
+fields:4c7820f0-4011-4ab4-a16a-e128800e11bc a form:Field ;
+    mu:uuid "4c7820f0-4011-4ab4-a16a-e128800e11bc" ;
+    sh:name "Welk beslissingsorgaan nam het besluit?" ;
+    sh:order 2000 ;
+    sh:path eli:passed_by ;
+    form:validations
+      [ a form:ConceptSchemeConstraint ; #TODO
+        form:grouping form:Bag ;
+        sh:path eli:passed_by ;
+        form:conceptScheme <http://data.lblod.info/concept-schemes/481c03f0-d07f-424e-9c2b-8d4cfb141c72> ;
+        sh:resultMessage "Selecteer een waarde uit de lijst."@nl
+      ],
+      [ a form:RequiredConstraint ;
+        form:grouping form:Bag ;
+        sh:resultMessage "Dit veld is verplicht."@nl;
+        sh:path eli:passed_by ] ;
+    form:options  """{"conceptScheme":"http://data.lblod.info/concept-schemes/481c03f0-d07f-424e-9c2b-8d4cfb141c72"}""" ;
+    form:displayType displayTypes:bestuursorgaanSelector ; # notice this changed too
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:303545a6-705b-43b3-86b7-b96436524be9 a form:Field ;
+    mu:uuid "303545a6-705b-43b3-86b7-b96436524be9" ;
+    sh:name "Bestuursorgaan classificatie code [hidden input]" ;
+    sh:order 1001 ;
+    sh:path ( eli:passed_by mandaat:isTijdspecialisatieVan besluit:classificatie ) ;
+    sh:group fields:aDynamicPropertyGroup .
+
 fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
     mu:uuid "3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb" ;
     sh:name "Datum zitting/besluit" ;
@@ -406,6 +434,33 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b a form:Field ;
          sh:resultMessage "Gelieve minstens één URL of bestand op te geven."@nl
      ];
     form:displayType displayTypes:remoteUrls;
+    sh:group fields:aDynamicPropertyGroup .
+
+# custom link validation for url required but file optional
+fields:1e0f541f-61e9-43a7-bc5f-612eb44f52bb a form:Field ;
+    mu:uuid "1e0f541f-61e9-43a7-bc5f-612eb44f52bb" ;
+    sh:name "Links naar documenten" ;
+    sh:order 10000 ;
+    sh:path dct:hasPart;
+    form:validations
+     [ a form:UriConstraint ;
+        form:grouping form:MatchEvery ;
+        sh:resultMessage "Gelieve een geldige URL op te geven. Zorg dat vooraan in de link altijd http://, https://, ftp:// of sftp:// staat."; # TODO: later custom validator
+         sh:path ( dct:hasPart nie:url ) ],
+     [ a form:RequiredConstraint ;
+         form:grouping form:Bag ;
+         sh:path ( dct:hasPart nie:url ) ;
+         sh:resultMessage "Gelieve minstens één URL op te geven."@nl
+     ];
+    form:displayType displayTypes:remoteUrls;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:c7c5a589-0785-4032-a4bd-ee589add3c39 a form:Field ;
+    mu:uuid "c7c5a589-0785-4032-a4bd-ee589add3c39" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:displayType displayTypes:files;
     sh:group fields:aDynamicPropertyGroup .
 
 fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a a form:Field ;
