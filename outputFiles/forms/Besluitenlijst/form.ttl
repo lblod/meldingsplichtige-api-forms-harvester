@@ -19,7 +19,10 @@ fieldGroups:64b712f3-c061-4368-919e-6ea6afb45192 a form:FieldGroup ;
                       fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db,
 
                       ### Bestuursorgaan classificatie code [hidden input] ###
-                      fields:303545a6-705b-43b3-86b7-b96436524be9.
+                      fields:303545a6-705b-43b3-86b7-b96436524be9,
+
+                      ### Bestuurseenheid classificatie code [hidden input] ###
+                      fields:ac32a491-4b5c-4a7e-973f-fad6127c9433.
 
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d75438e8-a4c5-4b39-a606-e198fdeb7aec.
 

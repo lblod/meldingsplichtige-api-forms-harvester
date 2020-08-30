@@ -190,6 +190,13 @@ fields:303545a6-705b-43b3-86b7-b96436524be9 a form:Field ;
     sh:path ( eli:passed_by mandaat:isTijdspecialisatieVan besluit:classificatie ) ;
     sh:group fields:aDynamicPropertyGroup .
 
+fields:ac32a491-4b5c-4a7e-973f-fad6127c9433 a form:Field ;
+    mu:uuid "ac32a491-4b5c-4a7e-973f-fad6127c9433" ;
+    sh:name "Bestuurseenheid classificatie code [hidden input]" ;
+    sh:order 1001 ;
+    sh:path ( eli:passed_by mandaat:isTijdspecialisatieVan besluit:bestuurt besluit:classificatie ) ;
+    sh:group fields:aDynamicPropertyGroup .
+
 fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb a form:Field ;
     mu:uuid "3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb" ;
     sh:name "Datum zitting/besluit" ;
