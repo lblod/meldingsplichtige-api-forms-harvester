@@ -2,7 +2,7 @@ fieldGroups:946669c2-f6eb-464d-a455-9633cc9a150c a form:FieldGroup ;
     mu:uuid "946669c2-f6eb-464d-a455-9633cc9a150c" ;
     form:hasField
 
-                      ###Links-naar-documenten### # this one may be kept, the logic remains the same
+                      ###Links-naar-documenten###
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
 
                       ###Bestanden###

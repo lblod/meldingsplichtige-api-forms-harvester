@@ -1,5 +1,3 @@
-
-
 ###########Rechtspositieregeling-(RPR)###########
 
 fieldGroups:02ffc029-d60c-49f7-8b13-5250a41615a6 a form:FieldGroup ;
@@ -12,23 +10,23 @@ fieldGroups:02ffc029-d60c-49f7-8b13-5250a41615a6 a form:FieldGroup ;
                       fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
-                      fields:bffbea8d-e55b-4e3d-86e8-ba7aaee7863d,
+                      fields:4c7820f0-4011-4ab4-a16a-e128800e11bc,
 
                       ###Datum-van-publicatie-op-webtoepassing###
                       fields:49dbe1be-877a-4890-8465-1510ff18ce18,
-
-                      ###Links-naar-documenten###
-                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
-
-                      ###Bestanden###
-                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
 
                       ###Type RemoteDataObject or FileDataObject###
                       fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
 
                       ### RemoteDataObject/url ###
-                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
-                      
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db,
+
+                      ### Bestuursorgaan classificatie code [hidden input] ###
+                      fields:303545a6-705b-43b3-86b7-b96436524be9,
+
+                      ### Bestuurseenheid classificatie code [hidden input] ###
+                      fields:ac32a491-4b5c-4a7e-973f-fad6127c9433.
+
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:d4a51632-72d3-459b-b6e5-0d87fbac188a.
 
 fields:d4a51632-72d3-459b-b6e5-0d87fbac188a a form:ConditionalFieldGroup ;
