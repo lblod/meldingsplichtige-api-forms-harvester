@@ -2,4 +2,4 @@
 
 npm install
 
-node concatForms.js
+node buildForms.js

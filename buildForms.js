@@ -10,5 +10,5 @@ read(outputDirPath+"forms/").forEach((fileDir, i)=>{
   output+=fs.readFileSync(outputDirPath+"forms/"+fileDir, "utf8");
 });
 
-fs.writeFileSync("./concat.ttl", output);
+fs.writeFileSync("./output.ttl", output);
 
