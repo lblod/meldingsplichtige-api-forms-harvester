@@ -6,13 +6,7 @@ fieldGroups:a8a2d3b7-54d2-4048-b371-fda94dfc0f6f a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
 
                       ###Bestanden###
-                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
-
-                      ###Type RemoteDataObject or FileDataObject###
-                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
-
-                      ### RemoteDataObject/url ###
-                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 # this field is the custom bestuursorgaan selector
 fields:4c7820f0-4011-4ab4-a16a-e128800e11bc form:hasConditionalFieldGroup fields:e7e63f88-e605-434e-905d-4bc744289713.
