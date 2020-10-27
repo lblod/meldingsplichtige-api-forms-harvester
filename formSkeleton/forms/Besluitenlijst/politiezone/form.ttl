@@ -1,0 +1,29 @@
+fieldGroups:65bd1029-ec2a-4c4c-bc1d-d2ff2710908f a form:FieldGroup ;
+    mu:uuid "65bd1029-ec2a-4c4c-bc1d-d2ff2710908f" ;
+    form:hasField
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
+
+# this field is the custom bestuursorgaan selector
+fields:4c7820f0-4011-4ab4-a16a-e128800e11bc form:hasConditionalFieldGroup fields:a7af8717-bb21-4d4a-8d6a-7477ba0dc021.
+
+fields:a7af8717-bb21-4d4a-8d6a-7477ba0dc021 a form:ConditionalFieldGroup ;
+    mu:uuid "a7af8717-bb21-4d4a-8d6a-7477ba0dc021";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/3fa67785-ffdc-4b30-8880-2b99d97b4dee>
+      ],
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path ( eli:passed_by mandaat:isTijdspecialisatieVan besluit:bestuurt besluit:classificatie ) ;
+        form:conceptScheme <http://data.vlaanderen.be/id/conceptscheme/BestuurseenheidClassificatieCode> ;
+        form:customValue <http://data.vlaanderen.be/id/concept/BestuurseenheidClassificatieCode/a3922c6d-425b-474f-9a02-ffb71a436bfc> # Politiezone
+      ] ;
+    form:hasFieldGroup fieldGroups:65bd1029-ec2a-4c4c-bc1d-d2ff2710908f .
