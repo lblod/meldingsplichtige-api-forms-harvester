@@ -1,3 +1,5 @@
+![warning-forms](https://user-images.githubusercontent.com/23281659/97719334-4007d000-1ac7-11eb-8449-bd21eba87928.png)
+
 ## Usage
 
 To run in a docker container clone this repo then run:
@@ -9,6 +11,39 @@ docker run -it --rm -v "$PWD":/app -w /app node:10 ./build-forms.sh
 ```
 
 Built forms will be put in ./output.ttl.
+
+## Testing changes
+
+**Make sure to test extensively your updates.**
+
+### Checklists
+
+Loket
+
+- Create a new submission
+- Save the empty submission to check validations
+- Fill the submission
+- Ensure fields and subfields behave property, especially with 
+- Save the submission, close it, reopen it
+- Send the submission, close it, reopen it
+- Open a submission in `Concept` state created with the previous forms version
+- Open a submission in `Sent` state created with the previous forms version
+
+Toezicht
+
+- Open a submission with the new form version
+- Open a submission with the old form version
+
+Full flow
+
+- Create a submission with the new forms version in Loket, send it, make sure it appears in Toezicht and can be opened
+- Same with a submission created with the old forms version but sent with the new forms version in application (env variable)
+
+### Debugging hints
+
+*This list is meant to evolve and get filled by developpers encountering issues.*
+
+- Forms not opening in Toezicht ABB --> double check there is a migration defining the form file as a resource
 
 ## Guide to create new fields
 
@@ -34,4 +69,4 @@ Generate the output file using the `build-forms.sh` script and paste the output 
 
 If you create a new configuration file, a few things need to be done :
 1. The `ACTIVE_FORM_FIELDS` environment variable of the [enrich-submission-service](https://github.com/lblod/enrich-submission-service#add-the-service-to-a-stack) needs to be updated to the new file name
-2. Add migrations to the app defining the configuration file as a resource in the database ([migration 1](https://github.com/lblod/app-digitaal-loket/blob/ed761a8731ffe8fd51226582f0e6223d460e7f50/config/migrations/20200407100352-automatisch-melding/20200904103600-fix-add-the-forms-file-as-a-file-resource.sparql) and [migration2](https://github.com/lblod/app-digitaal-loket/blob/ed761a8731ffe8fd51226582f0e6223d460e7f50/config/migrations/20200407100352-automatisch-melding/20200904103623-fix-add-active-form-to-all-submission-documents.sparql))
+2. Add migrations to the app defining the configuration file as a resource in the database ([migration](https://github.com/lblod/app-digitaal-loket/blob/ed761a8731ffe8fd51226582f0e6223d460e7f50/config/migrations/20200407100352-automatisch-melding/20200904103600-fix-add-the-forms-file-as-a-file-resource.sparql))
