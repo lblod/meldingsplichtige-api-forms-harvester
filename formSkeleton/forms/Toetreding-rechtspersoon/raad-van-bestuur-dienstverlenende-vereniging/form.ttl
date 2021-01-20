@@ -3,10 +3,10 @@ fieldGroups:40e3130a-1674-44fe-b7d6-61d247614941 a form:FieldGroup ;
     form:hasField
 
                       ###Links-naar-documenten###
-                      fields:1e0f541f-61e9-43a7-bc5f-612eb44f52bb,
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
 
                       ###Bestanden###
-                      fields:c7c5a589-0785-4032-a4bd-ee589add3c39.
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a.
 
 # this field is the custom bestuursorgaan selector
 fields:4c7820f0-4011-4ab4-a16a-e128800e11bc form:hasConditionalFieldGroup fields:3de3d137-2e50-42dd-bbcd-57292b04d399.

@@ -18,7 +18,7 @@ Built forms will be put in ./output.ttl.
 
 ### Checklists
 
-Loket
+**Loket**
 
 - Create a new submission
 - Save the empty submission to check validations
@@ -29,7 +29,18 @@ Loket
 - Open a submission in `Concept` state created with the previous forms version
 - Open a submission in `Sent` state created with the previous forms version
 
-Toezicht
+**Meldingsplichtige**
+
+- Create a new submission
+- Save the empty submission to check validations
+- Fill the submission
+- Ensure fields and subfields behave property, especially with
+- Save the submission, close it, reopen it
+- Send the submission, close it, reopen it
+- Open a submission in `Concept` state created with the previous forms version
+- Open a submission in `Sent` state created with the previous forms version
+
+**Toezicht**
 
 - Open a submission with the new form version
 - Open a submission with the old form version
