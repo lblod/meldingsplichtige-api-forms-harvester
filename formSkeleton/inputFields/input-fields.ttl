@@ -81,7 +81,7 @@ fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb a form:Field ;
 fields:b9d831c5-da21-40d6-aac8-65feb4783d76 a form:Field ;
     mu:uuid "b9d831c5-da21-40d6-aac8-65feb4783d76" ;
     sh:name "Gaat het over een voorlopige of definitieve vaststelling?" ;
-    sh:order 700 ;
+    sh:order 3800 ;
     sh:path lblodBesluit:AdoptionType ;
     form:validations
       [ a form:ConceptSchemeConstraint ;
@@ -97,7 +97,7 @@ fields:b9d831c5-da21-40d6-aac8-65feb4783d76 a form:Field ;
 fields:a7073ee1-3717-4798-ae10-fe69b29fabc1 a form:Field ;
     mu:uuid "a7073ee1-3717-4798-ae10-fe69b29fabc1" ;
     sh:name "Gaat het over een aanleg/verplaatsing/wijziging of over een opheffing van een gemeenteweg?" ;
-    sh:order 800 ;
+    sh:order 3900 ;
     sh:path lblodBesluit:MunicipalRoadProcedureType ;
     form:validations
       [ a form:ConceptSchemeConstraint ;
@@ -519,6 +519,54 @@ fields:c7c5a589-0785-4032-a4bd-ee589add3c39 a form:Field ;
     sh:order 10001 ;
     sh:path dct:hasPart;
     form:displayType <http://lblod.data.gift/display-types/files/variation/1> ;
+    sh:group fields:aDynamicPropertyGroup .
+
+########################################################################################################################
+# Simple field for File (with custom helper text for "voorlopige aanleg, verplaatsing of wijzeging van een gemeenteweg")
+########################################################################################################################
+fields:f1fa5e64-1c68-4355-894a-2e0531f4412f a form:Field ;
+    mu:uuid "f1fa5e64-1c68-4355-894a-2e0531f4412f" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:displayType <http://lblod.data.gift/display-types/files/variation/1> ;
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de voorlopige beslissing, ontwerp gemeentelijk rooilijnplan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
+    sh:group fields:aDynamicPropertyGroup .
+
+############################################################################
+# Simple field for File (with custom helper text for "voorlopige opheffing")
+############################################################################
+fields:6f7cb360-26df-4233-988a-a11ac9c33ba4 a form:Field ;
+    mu:uuid "6f7cb360-26df-4233-988a-a11ac9c33ba4" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:displayType <http://lblod.data.gift/display-types/files/variation/1> ;
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de voorlopige beslissing, ontwerp grafisch plan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
+    sh:group fields:aDynamicPropertyGroup .
+
+#########################################################################################################################
+# Simple field for File (with custom helper text for "definitieve aanleg, verplaatsing of wijzeging van een gemeenteweg")
+#########################################################################################################################
+fields:43c48290-8cc0-4066-aeee-8545bca7c68d a form:Field ;
+    mu:uuid "43c48290-8cc0-4066-aeee-8545bca7c68d" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:displayType <http://lblod.data.gift/display-types/files/variation/1> ;
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de definitieve beslissing, gemeentelijk rooilijnplan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
+    sh:group fields:aDynamicPropertyGroup .
+
+############################################################################
+# Simple field for File (with custom helper text for "definitive opheffing")
+############################################################################
+fields:2aecc67c-687d-448c-be01-94ad42fb51c1 a form:Field ;
+    mu:uuid "2aecc67c-687d-448c-be01-94ad42fb51c1" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:displayType <http://lblod.data.gift/display-types/files/variation/1> ;
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de definitieve beslissing, grafisch plan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
     sh:group fields:aDynamicPropertyGroup .
 
 ##########################################################

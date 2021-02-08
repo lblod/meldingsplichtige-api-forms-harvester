@@ -1,0 +1,37 @@
+
+
+###########Definitieve aanleg, verplaatsing of wijziging van een gemeenteweg###########
+
+fieldGroups:f7e0c669-2634-4264-b01f-cc76cfa24b1a a form:FieldGroup ;
+    mu:uuid "f7e0c669-2634-4264-b01f-cc76cfa24b1a" ;
+    form:hasField
+                      ###Links-naar-documenten###
+                      fields:1e0f541f-61e9-43a7-bc5f-612eb44f52bb,
+
+                      ###Bestanden###
+                      fields:43c48290-8cc0-4066-aeee-8545bca7c68d, # with custom helper text
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:b9d831c5-da21-40d6-aac8-65feb4783d76 form:hasConditionalFieldGroup fields:f831b57d-905a-4002-9a1d-60d2723c6672.
+
+fields:f831b57d-905a-4002-9a1d-60d2723c6672 a form:ConditionalFieldGroup ;
+    mu:uuid "f831b57d-905a-4002-9a1d-60d2723c6672";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path lblodBesluit:AdoptionType ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/a995bb71-3c87-4385-a06b-a786f2fa0d16> ;
+        form:customValue <http://lblod.data.gift/concepts/28da07ad-4a25-460e-b1be-92bd4b7b8927>
+      ] ,
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path lblodBesluit:MunicipalRoadProcedureType ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/60d620a5-ec34-4a91-ba84-fff0813d0ccc> ;
+        form:customValue <http://lblod.data.gift/concepts/0588da5c-08b2-4209-ab3c-efd1b94e1326>
+      ] ;
+    form:hasFieldGroup fieldGroups:f7e0c669-2634-4264-b01f-cc76cfa24b1a .

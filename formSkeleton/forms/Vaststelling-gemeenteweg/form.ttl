@@ -1,10 +1,10 @@
 
 
-###########Vastelling gemeenteweg###########
+###########Vaststelling gemeenteweg###########
 
 fieldGroups:c7d584e4-ebd8-49d5-a570-11670200d7b9 a form:FieldGroup ;
     mu:uuid "c7d584e4-ebd8-49d5-a570-11670200d7b9" ;
-    form:hasField 
+    form:hasField
 
                       ###Gaat het over een voorlopige of definitieve vaststelling?###
                       fields:b9d831c5-da21-40d6-aac8-65feb4783d76,
@@ -19,19 +19,7 @@ fieldGroups:c7d584e4-ebd8-49d5-a570-11670200d7b9 a form:FieldGroup ;
                       fields:49dbe1be-877a-4890-8465-1510ff18ce18,
 
                       ###Welk-beslissingsorgaan-nam-het-besluit?###
-                      fields:4c7820f0-4011-4ab4-a16a-e128800e11bc,
-
-                      ###Links-naar-documenten###
-                      fields:1e0f541f-61e9-43a7-bc5f-612eb44f52bb,
-
-                      ###Bestanden###
-                      fields:c7c5a589-0785-4032-a4bd-ee589add3c39,
-
-                      ###Type RemoteDataObject or FileDataObject###
-                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
-
-                      ### RemoteDataObject/url ###
-                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+                      fields:4c7820f0-4011-4ab4-a16a-e128800e11bc.
 
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:5b5ed2f1-f7be-49b7-bbcf-e1eece89b10c.
 
