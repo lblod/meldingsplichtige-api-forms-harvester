@@ -9,7 +9,13 @@ fieldGroups:f7e0c669-2634-4264-b01f-cc76cfa24b1a a form:FieldGroup ;
                       fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b ,
 
                       ###Bestanden###
-                      fields:43c48290-8cc0-4066-aeee-8545bca7c68d. # with custom helper text
+                      fields:43c48290-8cc0-4066-aeee-8545bca7c68d, # with custom helper text
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
 
 fields:b9d831c5-da21-40d6-aac8-65feb4783d76 form:hasConditionalFieldGroup fields:f831b57d-905a-4002-9a1d-60d2723c6672.
 

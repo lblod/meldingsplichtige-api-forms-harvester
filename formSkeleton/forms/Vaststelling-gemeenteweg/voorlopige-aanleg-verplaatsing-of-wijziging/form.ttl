@@ -6,10 +6,16 @@ fieldGroups:5e1cc9c8-59df-4802-a1d5-f776b6364617 a form:FieldGroup ;
     mu:uuid "5e1cc9c8-59df-4802-a1d5-f776b6364617" ;
     form:hasField
                       ###Links-naar-documenten###
-                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b ,
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
 
                       ###Bestanden###
-                      fields:f1fa5e64-1c68-4355-894a-2e0531f4412f. # with custom helper text
+                      fields:f1fa5e64-1c68-4355-894a-2e0531f4412f, # with custom helper text
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
 
 fields:b9d831c5-da21-40d6-aac8-65feb4783d76 form:hasConditionalFieldGroup fields:c9dfaf9c-31cb-4443-8084-bf383fb950b8.
 
