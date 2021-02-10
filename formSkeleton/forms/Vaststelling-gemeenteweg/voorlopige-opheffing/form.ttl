@@ -1,0 +1,37 @@
+
+
+###########Voorlopige Opheving###########
+
+fieldGroups:6f7eeed2-6f6e-4999-b225-a43ed0de5e4c a form:FieldGroup ;
+    mu:uuid "6f7eeed2-6f6e-4999-b225-a43ed0de5e4c" ;
+    form:hasField
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Bestanden###
+                      fields:6f7cb360-26df-4233-988a-a11ac9c33ba4, # with custom helper text
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:b9d831c5-da21-40d6-aac8-65feb4783d76 form:hasConditionalFieldGroup fields:20f49493-ff36-49c2-bb6f-e1711f8799d2.
+
+fields:20f49493-ff36-49c2-bb6f-e1711f8799d2 a form:ConditionalFieldGroup ;
+    mu:uuid "20f49493-ff36-49c2-bb6f-e1711f8799d2";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path lblodBesluit:AdoptionType ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/a995bb71-3c87-4385-a06b-a786f2fa0d16> ;
+        form:customValue <http://lblod.data.gift/concepts/055d66b8-204c-47da-80d9-d41601503616>
+      ] ,
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path lblodBesluit:MunicipalRoadProcedureType ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/60d620a5-ec34-4a91-ba84-fff0813d0ccc> ;
+        form:customValue <http://lblod.data.gift/concepts/82813418-356b-49a6-be9e-c5ef1b7a70bc>
+      ] ;
+    form:hasFieldGroup fieldGroups:6f7eeed2-6f6e-4999-b225-a43ed0de5e4c .

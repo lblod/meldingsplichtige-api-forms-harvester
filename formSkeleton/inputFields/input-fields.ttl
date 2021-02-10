@@ -78,6 +78,38 @@ fields:a8f6a6cb-dbb8-488c-878d-05603791a9eb a form:Field ;
     form:displayType displayTypes:conceptSchemeSelector ;
     sh:group fields:aDynamicPropertyGroup .
 
+fields:b9d831c5-da21-40d6-aac8-65feb4783d76 a form:Field ;
+    mu:uuid "b9d831c5-da21-40d6-aac8-65feb4783d76" ;
+    sh:name "Gaat het over een voorlopige of definitieve vaststelling?" ;
+    sh:order 3800 ;
+    sh:path lblodBesluit:AdoptionType ;
+    form:validations
+      [ a form:ConceptSchemeConstraint ;
+        form:grouping form:Bag ;
+        sh:path lblodBesluit:AdoptionType ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/a995bb71-3c87-4385-a06b-a786f2fa0d16>;
+        sh:resultMessage "Selecteer een waarde uit de lijst."@nl
+      ] ;
+    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/a995bb71-3c87-4385-a06b-a786f2fa0d16"}""" ;
+    form:displayType displayTypes:conceptSchemeRadioButtons ;
+    sh:group fields:aDynamicPropertyGroup .
+
+fields:a7073ee1-3717-4798-ae10-fe69b29fabc1 a form:Field ;
+    mu:uuid "a7073ee1-3717-4798-ae10-fe69b29fabc1" ;
+    sh:name "Gaat het over een aanleg/verplaatsing/wijziging of over een opheffing van een gemeenteweg?" ;
+    sh:order 3900 ;
+    sh:path lblodBesluit:MunicipalRoadProcedureType ;
+    form:validations
+      [ a form:ConceptSchemeConstraint ;
+        form:grouping form:Bag ;
+        sh:path lblodBesluit:MunicipalRoadProcedureType ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/60d620a5-ec34-4a91-ba84-fff0813d0ccc>;
+        sh:resultMessage "Selecteer een waarde uit de lijst."@nl
+      ] ;
+    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/60d620a5-ec34-4a91-ba84-fff0813d0ccc"}""" ;
+    form:displayType displayTypes:conceptSchemeRadioButtons ;
+    sh:group fields:aDynamicPropertyGroup .
+
 fields:6ffb0ed7-769a-41e4-b5a9-f6fb0287b235 a form:Field ;
     mu:uuid "6ffb0ed7-769a-41e4-b5a9-f6fb0287b235" ;
     sh:name "Ondernemingsnummer betreffend bedrijf/bestuur" ;
@@ -526,6 +558,78 @@ fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a a form:Field ;
           sh:resultMessage "Gelieve minstens één URL of bestand op te geven."@nl # TODO: later custom validator
      ];
     form:displayType displayTypes:files; # consider this v1.0
+    sh:group fields:aDynamicPropertyGroup .
+
+#####################################################################################################
+# File with custom helper text for "voorlopige aanleg, verplaatsing of wijzeging van een gemeenteweg"
+#####################################################################################################
+fields:f1fa5e64-1c68-4355-894a-2e0531f4412f a form:Field ;
+    mu:uuid "f1fa5e64-1c68-4355-894a-2e0531f4412f" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:validations
+     [ a  form:RequiredConstraint ;
+          form:grouping form:Bag ;
+          sh:path dct:hasPart;
+          sh:resultMessage "Gelieve minstens één URL of bestand op te geven."@nl # TODO: later custom validator
+     ];
+    form:displayType displayTypes:files; # consider this v1.0
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de voorlopige beslissing, ontwerp gemeentelijk rooilijnplan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
+    sh:group fields:aDynamicPropertyGroup .
+
+#########################################################
+# File with custom helper text for "voorlopige opheffing"
+#########################################################
+fields:6f7cb360-26df-4233-988a-a11ac9c33ba4 a form:Field ;
+    mu:uuid "6f7cb360-26df-4233-988a-a11ac9c33ba4" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:validations
+     [ a  form:RequiredConstraint ;
+          form:grouping form:Bag ;
+          sh:path dct:hasPart;
+          sh:resultMessage "Gelieve minstens één URL of bestand op te geven."@nl # TODO: later custom validator
+     ];
+    form:displayType displayTypes:files; # consider this v1.0
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de voorlopige beslissing, ontwerp grafisch plan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
+    sh:group fields:aDynamicPropertyGroup .
+
+######################################################################################################
+# File with custom helper text for "definitieve aanleg, verplaatsing of wijzeging van een gemeenteweg"
+######################################################################################################
+fields:43c48290-8cc0-4066-aeee-8545bca7c68d a form:Field ;
+    mu:uuid "43c48290-8cc0-4066-aeee-8545bca7c68d" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:validations
+     [ a  form:RequiredConstraint ;
+          form:grouping form:Bag ;
+          sh:path dct:hasPart;
+          sh:resultMessage "Gelieve minstens één URL of bestand op te geven."@nl # TODO: later custom validator
+     ];
+    form:displayType displayTypes:files; # consider this v1.0
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de definitieve beslissing, gemeentelijk rooilijnplan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
+    sh:group fields:aDynamicPropertyGroup .
+
+#########################################################
+# File with custom helper text for "definitive opheffing"
+#########################################################
+fields:2aecc67c-687d-448c-be01-94ad42fb51c1 a form:Field ;
+    mu:uuid "2aecc67c-687d-448c-be01-94ad42fb51c1" ;
+    sh:name "Bestanden" ;
+    sh:order 10001 ;
+    sh:path dct:hasPart;
+    form:validations
+     [ a  form:RequiredConstraint ;
+          form:grouping form:Bag ;
+          sh:path dct:hasPart;
+          sh:resultMessage "Gelieve minstens één URL of bestand op te geven."@nl # TODO: later custom validator
+     ];
+    form:displayType displayTypes:files; # consider this v1.0
+    form:help """Volgende documenten moeten bezorgd worden: uittreksel uit de gemeenteraad met de definitieve beslissing, grafisch plan, gemeentelijk beleidskader (indien opgemaakt), gemeentelijk actieplan (indien opgemaakt)""" ;
     sh:group fields:aDynamicPropertyGroup .
 
 ##########################################################
