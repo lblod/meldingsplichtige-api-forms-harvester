@@ -31,7 +31,13 @@ fieldGroups:8f69f627-e0f0-44e9-95f2-7db5e421f0fc a form:FieldGroup ;
                       fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
 
                       ### RemoteDataObject/url ###
-                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db,
+
+                      ### Bestuursorgaan classificatie code [hidden input] ###
+                      fields:303545a6-705b-43b3-86b7-b96436524be9,
+
+                      ### Bestuurseenheid classificatie code [hidden input] ###
+                      fields:ac32a491-4b5c-4a7e-973f-fad6127c9433.
 
 fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:0ae400e4-6897-4d86-982a-e1f74ead1f93.
 
