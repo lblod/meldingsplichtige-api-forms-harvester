@@ -1,0 +1,30 @@
+###########VGC Algmeen toezicht###########
+
+fieldGroups:fdfae030-6345-407d-9c77-77fe7ab13ac7 a form:FieldGroup ;
+    mu:uuid "fdfae030-6345-407d-9c77-77fe7ab13ac7" ;
+    form:hasField
+
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:4c7820f0-4011-4ab4-a16a-e128800e11bc,
+
+                      ###Bestanden###
+                      fields:c7c5a589-0785-4032-a4bd-ee589add3c39,
+
+                      ###Links-naar-documenten###
+                      fields:1e0f541f-61e9-43a7-bc5f-612eb44f52bb.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:4a36c15b-ed7a-4c72-bc45-68658d95eb48.
+
+fields:4a36c15b-ed7a-4c72-bc45-68658d95eb48 a form:ConditionalFieldGroup ;
+    mu:uuid "4a36c15b-ed7a-4c72-bc45-68658d95eb48";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/f4b1b40a-4ac4-4e12-bdd2-84966f274edc>
+      ] ;
+    form:hasFieldGroup fieldGroups:fdfae030-6345-407d-9c77-77fe7ab13ac7 .
