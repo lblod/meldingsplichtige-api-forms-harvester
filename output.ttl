@@ -1013,6 +1013,42 @@ fields:e14b7ae5-f527-4fb8-b1b8-84779bac960b a form:ConditionalFieldGroup ;
         form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/13fefad6-a9d6-4025-83b5-e4cbee3a8965>
       ] ;
     form:hasFieldGroup fieldGroups:0945ac20-fec2-4a08-8cb5-ddec808e0c4c .
+###########VGC Algmeen toezicht###########
+
+fieldGroups:fdfae030-6345-407d-9c77-77fe7ab13ac7 a form:FieldGroup ;
+    mu:uuid "fdfae030-6345-407d-9c77-77fe7ab13ac7" ;
+    form:hasField
+
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:4c7820f0-4011-4ab4-a16a-e128800e11bc,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:4a36c15b-ed7a-4c72-bc45-68658d95eb48.
+
+fields:4a36c15b-ed7a-4c72-bc45-68658d95eb48 a form:ConditionalFieldGroup ;
+    mu:uuid "4a36c15b-ed7a-4c72-bc45-68658d95eb48";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/f4b1b40a-4ac4-4e12-bdd2-84966f274edc>
+      ] ;
+    form:hasFieldGroup fieldGroups:fdfae030-6345-407d-9c77-77fe7ab13ac7 .
 
 
 ###########Andere-documenten-BBC###########
@@ -2490,7 +2526,43 @@ fields:3a3c7b25-cce7-4b69-9412-4e79ae0bccb8 a form:ConditionalFieldGroup ;
         form:conceptScheme <http://data.vlaanderen.be/id/conceptscheme/BestuursorgaanClassificatieCode> ;
         form:customValue <http://data.vlaanderen.be/id/concept/BestuursorgaanClassificatieCode/53c0d8cd-f3a2-411d-bece-4bd83ae2bbc9> # Voorzitter van het Bijzonder Comité voor de Sociale Dienst
       ] ;
-    form:hasFieldGroup fieldGroups:cd043d7a-175a-4453-88cb-a3083e57086d .
+    form:hasFieldGroup fieldGroups:cd043d7a-175a-4453-88cb-a3083e57086d .###########VGC Bijzonder adminstratief toezicht###########
+
+fieldGroups:473b2370-fa80-41bf-8e0f-842d63093b5a a form:FieldGroup ;
+    mu:uuid "473b2370-fa80-41bf-8e0f-842d63093b5a" ;
+    form:hasField
+
+                      ###Datum-zitting/besluit###
+                      fields:3dd6ed93-40f7-4d70-a6cb-f4de53dc8bfb,
+
+                      ###Welk-beslissingsorgaan-nam-het-besluit?###
+                      fields:4c7820f0-4011-4ab4-a16a-e128800e11bc,
+
+                      ###Bestanden###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95a,
+
+                      ###Links-naar-documenten###
+                      fields:c955d641-b9b3-4ec7-9838-c2a477c7e95b,
+
+                      ###Type RemoteDataObject or FileDataObject###
+                      fields:355fe001-cdca-48cc-8a6e-88b3aab09874,
+
+                      ### RemoteDataObject/url ###
+                      fields:d0052f0d-90bc-4543-a6b0-e90a1c1117db.
+
+fields:0827fafe-ad19-49e1-8b2e-105d2c08a54a form:hasConditionalFieldGroup fields:f038bf93-0f8b-46e4-a095-50dc10caae5a.
+
+fields:f038bf93-0f8b-46e4-a095-50dc10caae5a a form:ConditionalFieldGroup ;
+    mu:uuid "f038bf93-0f8b-46e4-a095-50dc10caae5a";
+    form:conditions
+      [ a form:SingleCodelistValue ;
+        form:grouping form:Bag ;
+        sh:path rdf:type ;
+        form:conceptScheme <http://lblod.data.gift/concept-schemes/71e6455e-1204-46a6-abf4-87319f58eaa5> ;
+        form:customValue <https://data.vlaanderen.be/id/concept/BesluitDocumentType/d60eb90b-926b-4c64-b87c-866c0cf92f0a>
+      ] ;
+    form:hasFieldGroup fieldGroups:473b2370-fa80-41bf-8e0f-842d63093b5a .
+
 
 ###########Budget###########
 

@@ -23,7 +23,7 @@ Built forms will be put in ./output.ttl.
 - Create a new submission
 - Save the empty submission to check validations
 - Fill the submission
-- Ensure fields and subfields behave property, especially with 
+- Ensure fields and subfields behave property, especially with
 - Save the submission, close it, reopen it
 - Send the submission, close it, reopen it
 - Open a submission in `Concept` state created with the previous forms version
@@ -74,13 +74,14 @@ If your field is using new concept schemes they must be added in `lib/enricher.j
 If your field is using new relationships that are not added in the enrichment yet, they must be added in `lib/enricher.js` of [enrich-submission-service](https://github.com/lblod/enrich-submission-service) as well as in `lib/submission-enricher.js`
 of [import-submission-service](https://github.com/lblod/import-submission-service)
 
+Furthermore, most likely, you want this field in the database if new relation: this [toezicht-flattened-form-data-generator](https://github.com/lblod/toezicht-flattened-form-data-generator) should be updated with a new extractor
+
 ### Export configuration to the apps
 
 Generate the output file using the `build-forms.sh` script and paste the output to the apps using it (`app-digitaal-loket`, `app-meldingsplichtige-api`, `app-toezicht-abb`) in the `config/semanticForms/` folder.
 
 If you create a new configuration file, a few things need to be done :
 1. The `ACTIVE_FORM_FIELDS` environment variable of the [enrich-submission-service](https://github.com/lblod/enrich-submission-service#add-the-service-to-a-stack) needs to be updated to the new file name
-2. Add migrations to the app defining the configuration file as a resource in the database ([migration](https://github.com/lblod/app-digitaal-loket/blob/ed761a8731ffe8fd51226582f0e6223d460e7f50/config/migrations/20200407100352-automatisch-melding/20200904103600-fix-add-the-forms-file-as-a-file-resource.sparql)) 
-  - Best to add the migration on all instances of the apps using it. 
+2. Add migrations to the app defining the configuration file as a resource in the database ([migration](https://github.com/lblod/app-digitaal-loket/blob/ed761a8731ffe8fd51226582f0e6223d460e7f50/config/migrations/20200407100352-automatisch-melding/20200904103600-fix-add-the-forms-file-as-a-file-resource.sparql))
+  - Best to add the migration on all instances of the apps using it.
   - Bear in mind: [app-digitaal-loket](https://github.com/lblod/app-digitaal-loket), [app-toezicht-abb](https://github.com/lblod/app-toezicht-abb), [app-meldingsplichtige-api](https://github.com/lblod/app-meldingsplichtige-api) are currently using it.
-   
