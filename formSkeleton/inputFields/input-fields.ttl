@@ -731,29 +731,3 @@ fields:eaf71eec-6ca8-4f63-b4a6-adfe4f21651b a form:Field ;
 ##########################################################
 #  END VLABEL [First version]
 ##########################################################
-
-
-##########################################################
-#  Category
-##########################################################
-
-fields:94a7694e-2547-4f45-9dc8-39a63cbc60f8 a form:Field ;
-    mu:uuid "94a7694e-2547-4f45-9dc8-39a63cbc60f8" ;
-    sh:name "Categorie" ;
-    sh:order 3800 ;
-    sh:path rdf:type ;
-    form:validations
-    [ a form:RequiredConstraint ;
-        form:grouping form:Bag ;
-        sh:path rdf:type ;
-        sh:resultMessage "Dit veld is verplicht."@nl
-    ],
-    [ a form:ConceptSchemeConstraint ; #TODO
-        form:grouping form:Bag ;
-        sh:path rdf:type ;
-        form:conceptScheme <http://lblod.data.gift/concept-schemes/d9dc8ba1-5dc5-4cfc-9e65-a8a70c9bb545>  ;
-        sh:resultMessage "Selecteer een waarde uit de lijst."@nl
-      ] ;
-    form:options  """{"conceptScheme":"http://lblod.data.gift/concept-schemes/d9dc8ba1-5dc5-4cfc-9e65-a8a70c9bb545"}""" ;
-    form:displayType displayTypes:conceptSchemeSelector ;
-    sh:group fields:aDynamicPropertyGroup .
